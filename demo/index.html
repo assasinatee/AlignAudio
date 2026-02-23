@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>AlignAudio Demo</title>
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px;
+  background: #f7f7f7;
+}
+
+h1 {
+  text-align: center;
+}
+
+.sample-block {
+  background: white;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.sample-text {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.audio-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.audio-item {
+  flex: 1;
+  text-align: center;
+}
+
+audio {
+  width: 100%;
+}
+</style>
+</head>
+
+<body>
+
+<h1>AlignAudio Demo</h1>
+
+<div class="sample-block">
+
+  <div class="sample-text">
+    Text: Water trickling with a man speaking
+  </div>
+
+  <div class="audio-row">
+
+    <div class="audio-item">
+      <p><b>Clean</b></p>
+      <audio controls src="samples/case1/clean.mp3"></audio>
+    </div>
+
+    <div class="audio-item">
+      <p><b>Noisy</b></p>
+      <audio controls src="samples/case1/noisy.mp3"></audio>
+    </div>
+
+    <div class="audio-item">
+      <p><b>Ours</b></p>
+      <audio controls src="samples/case1/ours.mp3"></audio>
+    </div>
+
+  </div>
+
+</div>
+
+
+<div class="sample-block">
+
+  <div class="sample-text">
+    Text: A dog barking while children laugh
+  </div>
+
+  <div class="audio-row">
+
+    <div class="audio-item">
+      <p><b>Clean</b></p>
+      <audio controls src="samples/case2/clean.mp3"></audio>
+    </div>
+
+    <div class="audio-item">
+      <p><b>Noisy</b></p>
+      <audio controls src="samples/case2/noisy.mp3"></audio>
+    </div>
+
+    <div class="audio-item">
+      <p><b>Ours</b></p>
+      <audio controls src="samples/case2/ours.mp3"></audio>
+    </div>
+
+  </div>
+
+</div>
+
+</body>
+</html>
