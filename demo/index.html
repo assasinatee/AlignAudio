@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>AlignAudio Demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 900px;
+      margin: auto;
+      padding: 40px;
+    }
+    h1 {
+      text-align: center;
+    }
+    table {
+      width: 100%;
+      margin-top: 30px;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 12px;
+      text-align: center;
+      border: 1px solid #ddd;
+    }
+    audio {
+      width: 220px;
+    }
+  </style>
+</head>
+
+<body>
+
+<h1>AlignAudio</h1>
+<p><b>Clean vs Noisy vs Ours</b></p>
+
+<table>
+  <tr>
+    <th>Text</th>
+    <th>Clean</th>
+    <th>Noisy</th>
+    <th>Ours</th>
+  </tr>
+
+  <tr>
+    <td>Water trickling with man speaking</td>
+    <td><audio controls src="samples/clean1.mp3"></audio></td>
+    <td><audio controls src="samples/noisy1.mp3"></audio></td>
+    <td><audio controls src="samples/ours1.mp3"></audio></td>
+  </tr>
+
+</table>
+
+</body>
+</html>
