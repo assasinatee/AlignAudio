@@ -1,0 +1,90 @@
+exp_name: noise_distillation
+exp_dir: experiments/${exp_name}/
+logging_file: ${exp_dir}/train.log
+seed: 42
+loss_fn:
+  _target_: torch.nn.MSELoss
+  reduction: mean
+cuda_available: cuda:0
+train_dataloader:
+  _target_: torchdata.stateful_dataloader.StatefulDataLoader
+  dataset:
+    _target_: data_module.dataset.AudioDataset
+    audio_dir: /hpc_stor03/sjtu_home/yixuan.li/work/TTS/speecht5_res/CLB/train
+    musan_dir: /hpc_stor03/public/shared/data/raa/musan
+    rirs_dir: /hpc_stor03/public/shared/data/raa/RIRS_NOISES/simulated_rirs/mediumroom
+    device: ${cuda_available}
+    env_prob: 0.5
+    music_prob: 0.3
+    reverb_prob: 0.2
+    snr_range:
+    - 5
+    - 20
+    seed: 42
+    h5_file: /hpc_stor03/sjtu_home/yixuan.li/work/audio_embeds/cavp_features/speecht5_features/CLB_train.h5
+  batch_size: 12
+  num_workers: 12
+  collate_fn:
+    _target_: data_module.dataset.CollateFn
+    to_numpy: true
+val_dataloader:
+  _target_: torchdata.stateful_dataloader.StatefulDataLoader
+  dataset:
+    _target_: data_module.dataset.AudioDataset
+    audio_dir: /hpc_stor03/sjtu_home/yixuan.li/work/TTS/speecht5_res/CLB/val
+    musan_dir: /hpc_stor03/public/shared/data/raa/musan
+    rirs_dir: /hpc_stor03/public/shared/data/raa/RIRS_NOISES/simulated_rirs/mediumroom
+    device: ${cuda_available}
+    env_prob: 0.5
+    music_prob: 0.3
+    reverb_prob: 0.2
+    snr_range:
+    - 5
+    - 20
+    seed: 42
+    h5_file: /hpc_stor03/sjtu_home/yixuan.li/work/audio_embeds/cavp_features/speecht5_features/CLB_val.h5
+  batch_size: 12
+  num_workers: 12
+  collate_fn:
+    _target_: data_module.dataset.CollateFn
+    to_numpy: true
+warmup_params:
+  warmup_steps: 3000
+  warmup_epochs: null
+  epoch_length: ${epoch_length}
+gradient_accumulation_steps: 2
+optimizer:
+  _target_: torch.optim.AdamW
+  lr: 2.5e-05
+  weight_decay: 0.01
+lr_scheduler:
+  _target_: transformers.get_scheduler
+  name: constant_with_warmup
+epochs: 30
+epoch_length: null
+trainer:
+  _target_: noise_trainer.NoiseTrainer
+  model_weight_path: /hpc_stor03/sjtu_home/yixuan.li/model_ckpt/speecht5_vc
+  device: ${cuda_available}
+  project_dir: ${exp_dir}
+  logging_file: ${logging_file}
+  gradient_accumulation_steps: ${gradient_accumulation_steps}
+  max_grad_norm: 1.0
+  epochs: ${epochs}
+  epoch_length: ${epoch_length}
+  save_last_k: 2
+  early_stop: null
+  logging_config:
+    _target_: accel_hydra.trainer.LoggingConfig
+    report_to: swanlab
+    project: star_noise_distillation
+    save_dir: ${exp_dir}
+    name: ${exp_name}
+    resume_id: null
+    workspace: assainatee
+  metric_monitor:
+    _target_: accel_hydra.trainer.MetricMonitor
+    metric_name: loss
+    mode: min
+model:
+  pretrained_ckpt: /hpc_stor03/sjtu_home/yixuan.li/work/accel_hydra/examples/noise_distillation/experiments/noise_distillation/checkpoints/epoch_1/model.safetensors

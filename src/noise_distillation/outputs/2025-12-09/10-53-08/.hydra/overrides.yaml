@@ -1,0 +1,5 @@
+- exp_name=audiocaps_star_ft_speecht5
+- optimizer.lr=2.5e-5
+- warmup_params.warmup_steps=3000
+- epoch_length=Null
+- epochs=30

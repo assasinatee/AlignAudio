@@ -1,0 +1,561 @@
+[2025-12-11 07:21:06,164][accelerate.utils.other][WARNING] - Detected kernel version 4.18.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+[2025-12-11 07:21:06,928][accelerate.accelerator][INFO] - Loading states from experiments/noise_distillation/checkpoints/epoch_1
+[2025-12-11 07:21:07,624][accelerate.checkpointing][INFO] - All model weights loaded successfully
+[2025-12-11 07:21:07,702][accelerate.checkpointing][INFO] - All optimizer states loaded successfully
+[2025-12-11 07:21:07,705][accelerate.checkpointing][INFO] - All scheduler states loaded successfully
+[2025-12-11 07:21:07,705][accelerate.checkpointing][INFO] - All dataloader sampler states loaded successfully
+[2025-12-11 07:21:07,708][accelerate.checkpointing][INFO] - GradScaler state loaded successfully
+[2025-12-11 07:21:07,712][accelerate.checkpointing][INFO] - All random states loaded successfully
+[2025-12-11 07:21:07,713][accelerate.accelerator][INFO] - Loading in 1 custom states
+[2025-12-11 07:21:07,714][accelerate.checkpointing][INFO] - Loading the state of NoiseTrainer from experiments/noise_distillation/checkpoints/epoch_1/custom_checkpoint_0.pkl
+[2025-12-11 09:19:43,778][accelerate.accelerator][INFO] - Saving current state to experiments/noise_distillation/checkpoints/epoch_2
+[2025-12-11 09:19:44,324][accelerate.checkpointing][INFO] - Model weights saved in experiments/noise_distillation/checkpoints/epoch_2/model.safetensors
+[2025-12-11 09:19:44,374][accelerate.checkpointing][INFO] - Optimizer state saved in experiments/noise_distillation/checkpoints/epoch_2/optimizer.bin
+[2025-12-11 09:19:44,377][accelerate.checkpointing][INFO] - Scheduler state saved in experiments/noise_distillation/checkpoints/epoch_2/scheduler.bin
+[2025-12-11 09:19:44,378][accelerate.checkpointing][INFO] - Sampler state for dataloader 0 saved in experiments/noise_distillation/checkpoints/epoch_2/sampler.bin
+[2025-12-11 09:19:44,378][accelerate.checkpointing][INFO] - Sampler state for dataloader 1 saved in experiments/noise_distillation/checkpoints/epoch_2/sampler_1.bin
+[2025-12-11 09:19:44,380][accelerate.checkpointing][INFO] - Gradient scaler state saved in experiments/noise_distillation/checkpoints/epoch_2/scaler.pt
+[2025-12-11 09:19:44,383][accelerate.checkpointing][INFO] - Random states saved in experiments/noise_distillation/checkpoints/epoch_2/random_states_0.pkl
+[2025-12-11 09:19:44,383][accelerate.checkpointing][INFO] - Saving the state of NoiseTrainer to experiments/noise_distillation/checkpoints/epoch_2/custom_checkpoint_0.pkl
+[2025-12-11 09:19:44,403][accelerate.accelerator][INFO] - Saving current state to experiments/noise_distillation/checkpoints/best
+[2025-12-11 09:19:44,945][accelerate.checkpointing][INFO] - Model weights saved in experiments/noise_distillation/checkpoints/best/model.safetensors
+[2025-12-11 09:19:44,991][accelerate.checkpointing][INFO] - Optimizer state saved in experiments/noise_distillation/checkpoints/best/optimizer.bin
+[2025-12-11 09:19:44,993][accelerate.checkpointing][INFO] - Scheduler state saved in experiments/noise_distillation/checkpoints/best/scheduler.bin
+[2025-12-11 09:19:44,994][accelerate.checkpointing][INFO] - Sampler state for dataloader 0 saved in experiments/noise_distillation/checkpoints/best/sampler.bin
+[2025-12-11 09:19:44,994][accelerate.checkpointing][INFO] - Sampler state for dataloader 1 saved in experiments/noise_distillation/checkpoints/best/sampler_1.bin
+[2025-12-11 09:19:44,996][accelerate.checkpointing][INFO] - Gradient scaler state saved in experiments/noise_distillation/checkpoints/best/scaler.pt
+[2025-12-11 09:19:44,998][accelerate.checkpointing][INFO] - Random states saved in experiments/noise_distillation/checkpoints/best/random_states_0.pkl
+[2025-12-11 09:19:44,999][accelerate.checkpointing][INFO] - Saving the state of NoiseTrainer to experiments/noise_distillation/checkpoints/best/custom_checkpoint_0.pkl
+[2025-12-11 09:19:45,001][accel_hydra.utils.logging.experiments/noise_distillation//train.log][INFO] - training epoch 2 ended
+[2025-12-11 11:18:26,620][accelerate.accelerator][INFO] - Saving current state to experiments/noise_distillation/checkpoints/epoch_3
+[2025-12-11 11:18:27,148][accelerate.checkpointing][INFO] - Model weights saved in experiments/noise_distillation/checkpoints/epoch_3/model.safetensors
+[2025-12-11 11:18:27,202][accelerate.checkpointing][INFO] - Optimizer state saved in experiments/noise_distillation/checkpoints/epoch_3/optimizer.bin
+[2025-12-11 11:18:27,204][accelerate.checkpointing][INFO] - Scheduler state saved in experiments/noise_distillation/checkpoints/epoch_3/scheduler.bin
+[2025-12-11 11:18:27,204][accelerate.checkpointing][INFO] - Sampler state for dataloader 0 saved in experiments/noise_distillation/checkpoints/epoch_3/sampler.bin
+[2025-12-11 11:18:27,205][accelerate.checkpointing][INFO] - Sampler state for dataloader 1 saved in experiments/noise_distillation/checkpoints/epoch_3/sampler_1.bin
+[2025-12-11 11:18:27,207][accelerate.checkpointing][INFO] - Gradient scaler state saved in experiments/noise_distillation/checkpoints/epoch_3/scaler.pt
+[2025-12-11 11:18:27,209][accelerate.checkpointing][INFO] - Random states saved in experiments/noise_distillation/checkpoints/epoch_3/random_states_0.pkl
+[2025-12-11 11:18:27,210][accelerate.checkpointing][INFO] - Saving the state of NoiseTrainer to experiments/noise_distillation/checkpoints/epoch_3/custom_checkpoint_0.pkl
+[2025-12-11 11:18:27,226][accelerate.accelerator][INFO] - Saving current state to experiments/noise_distillation/checkpoints/best
+[2025-12-11 11:18:27,850][accelerate.checkpointing][INFO] - Model weights saved in experiments/noise_distillation/checkpoints/best/model.safetensors
+[2025-12-11 11:18:27,897][accelerate.checkpointing][INFO] - Optimizer state saved in experiments/noise_distillation/checkpoints/best/optimizer.bin
+[2025-12-11 11:18:27,900][accelerate.checkpointing][INFO] - Scheduler state saved in experiments/noise_distillation/checkpoints/best/scheduler.bin
+[2025-12-11 11:18:27,900][accelerate.checkpointing][INFO] - Sampler state for dataloader 0 saved in experiments/noise_distillation/checkpoints/best/sampler.bin
+[2025-12-11 11:18:27,900][accelerate.checkpointing][INFO] - Sampler state for dataloader 1 saved in experiments/noise_distillation/checkpoints/best/sampler_1.bin
+[2025-12-11 11:18:27,902][accelerate.checkpointing][INFO] - Gradient scaler state saved in experiments/noise_distillation/checkpoints/best/scaler.pt
+[2025-12-11 11:18:27,904][accelerate.checkpointing][INFO] - Random states saved in experiments/noise_distillation/checkpoints/best/random_states_0.pkl
+[2025-12-11 11:18:27,905][accelerate.checkpointing][INFO] - Saving the state of NoiseTrainer to experiments/noise_distillation/checkpoints/best/custom_checkpoint_0.pkl
+[2025-12-11 11:18:27,907][accel_hydra.utils.logging.experiments/noise_distillation//train.log][INFO] - training epoch 3 ended
+[2025-12-11 13:16:52,375][accelerate.accelerator][INFO] - Saving current state to experiments/noise_distillation/checkpoints/epoch_4
+[2025-12-11 13:16:52,947][accelerate.checkpointing][INFO] - Model weights saved in experiments/noise_distillation/checkpoints/epoch_4/model.safetensors
+[2025-12-11 13:16:52,996][accelerate.checkpointing][INFO] - Optimizer state saved in experiments/noise_distillation/checkpoints/epoch_4/optimizer.bin
+[2025-12-11 13:16:52,999][accelerate.checkpointing][INFO] - Scheduler state saved in experiments/noise_distillation/checkpoints/epoch_4/scheduler.bin
+[2025-12-11 13:16:52,999][accelerate.checkpointing][INFO] - Sampler state for dataloader 0 saved in experiments/noise_distillation/checkpoints/epoch_4/sampler.bin
+[2025-12-11 13:16:52,999][accelerate.checkpointing][INFO] - Sampler state for dataloader 1 saved in experiments/noise_distillation/checkpoints/epoch_4/sampler_1.bin
+[2025-12-11 13:16:53,001][accelerate.checkpointing][INFO] - Gradient scaler state saved in experiments/noise_distillation/checkpoints/epoch_4/scaler.pt
+[2025-12-11 13:16:53,004][accelerate.checkpointing][INFO] - Random states saved in experiments/noise_distillation/checkpoints/epoch_4/random_states_0.pkl
+[2025-12-11 13:16:53,004][accelerate.checkpointing][INFO] - Saving the state of NoiseTrainer to experiments/noise_distillation/checkpoints/epoch_4/custom_checkpoint_0.pkl
+[2025-12-11 13:16:53,019][accelerate.accelerator][INFO] - Saving current state to experiments/noise_distillation/checkpoints/best
+[2025-12-11 13:16:53,588][accelerate.checkpointing][INFO] - Model weights saved in experiments/noise_distillation/checkpoints/best/model.safetensors
+[2025-12-11 13:16:53,656][accelerate.checkpointing][INFO] - Optimizer state saved in experiments/noise_distillation/checkpoints/best/optimizer.bin
+[2025-12-11 13:16:53,658][accelerate.checkpointing][INFO] - Scheduler state saved in experiments/noise_distillation/checkpoints/best/scheduler.bin
+[2025-12-11 13:16:53,658][accelerate.checkpointing][INFO] - Sampler state for dataloader 0 saved in experiments/noise_distillation/checkpoints/best/sampler.bin
+[2025-12-11 13:16:53,658][accelerate.checkpointing][INFO] - Sampler state for dataloader 1 saved in experiments/noise_distillation/checkpoints/best/sampler_1.bin
+[2025-12-11 13:16:53,660][accelerate.checkpointing][INFO] - Gradient scaler state saved in experiments/noise_distillation/checkpoints/best/scaler.pt
+[2025-12-11 13:16:53,662][accelerate.checkpointing][INFO] - Random states saved in experiments/noise_distillation/checkpoints/best/random_states_0.pkl
+[2025-12-11 13:16:53,662][accelerate.checkpointing][INFO] - Saving the state of NoiseTrainer to experiments/noise_distillation/checkpoints/best/custom_checkpoint_0.pkl
+[2025-12-11 13:16:53,664][accel_hydra.utils.logging.experiments/noise_distillation//train.log][INFO] - training epoch 4 ended
+[2025-12-11 15:14:55,631][accelerate.accelerator][INFO] - Saving current state to experiments/noise_distillation/checkpoints/epoch_5
+[2025-12-11 15:14:56,161][accelerate.checkpointing][INFO] - Model weights saved in experiments/noise_distillation/checkpoints/epoch_5/model.safetensors
+[2025-12-11 15:14:56,217][accelerate.checkpointing][INFO] - Optimizer state saved in experiments/noise_distillation/checkpoints/epoch_5/optimizer.bin
+[2025-12-11 15:14:56,222][accelerate.checkpointing][INFO] - Scheduler state saved in experiments/noise_distillation/checkpoints/epoch_5/scheduler.bin
+[2025-12-11 15:14:56,223][accelerate.checkpointing][INFO] - Sampler state for dataloader 0 saved in experiments/noise_distillation/checkpoints/epoch_5/sampler.bin
+[2025-12-11 15:14:56,223][accelerate.checkpointing][INFO] - Sampler state for dataloader 1 saved in experiments/noise_distillation/checkpoints/epoch_5/sampler_1.bin
+[2025-12-11 15:14:56,225][accelerate.checkpointing][INFO] - Gradient scaler state saved in experiments/noise_distillation/checkpoints/epoch_5/scaler.pt
+[2025-12-11 15:14:56,228][accelerate.checkpointing][INFO] - Random states saved in experiments/noise_distillation/checkpoints/epoch_5/random_states_0.pkl
+[2025-12-11 15:14:56,228][accelerate.checkpointing][INFO] - Saving the state of NoiseTrainer to experiments/noise_distillation/checkpoints/epoch_5/custom_checkpoint_0.pkl
+[2025-12-11 15:14:56,243][accelerate.accelerator][INFO] - Saving current state to experiments/noise_distillation/checkpoints/best
+[2025-12-11 15:14:56,776][accelerate.checkpointing][INFO] - Model weights saved in experiments/noise_distillation/checkpoints/best/model.safetensors
+[2025-12-11 15:14:56,821][accelerate.checkpointing][INFO] - Optimizer state saved in experiments/noise_distillation/checkpoints/best/optimizer.bin
+[2025-12-11 15:14:56,822][accelerate.checkpointing][INFO] - Scheduler state saved in experiments/noise_distillation/checkpoints/best/scheduler.bin
+[2025-12-11 15:14:56,823][accelerate.checkpointing][INFO] - Sampler state for dataloader 0 saved in experiments/noise_distillation/checkpoints/best/sampler.bin
+[2025-12-11 15:14:56,823][accelerate.checkpointing][INFO] - Sampler state for dataloader 1 saved in experiments/noise_distillation/checkpoints/best/sampler_1.bin
+[2025-12-11 15:14:56,824][accelerate.checkpointing][INFO] - Gradient scaler state saved in experiments/noise_distillation/checkpoints/best/scaler.pt
+[2025-12-11 15:14:56,826][accelerate.checkpointing][INFO] - Random states saved in experiments/noise_distillation/checkpoints/best/random_states_0.pkl
+[2025-12-11 15:14:56,827][accelerate.checkpointing][INFO] - Saving the state of NoiseTrainer to experiments/noise_distillation/checkpoints/best/custom_checkpoint_0.pkl
+[2025-12-11 15:14:56,829][accel_hydra.utils.logging.experiments/noise_distillation//train.log][INFO] - training epoch 5 ended
+[2025-12-11 17:13:25,413][accelerate.accelerator][INFO] - Saving current state to experiments/noise_distillation/checkpoints/epoch_6
+[2025-12-11 17:13:25,981][accelerate.checkpointing][INFO] - Model weights saved in experiments/noise_distillation/checkpoints/epoch_6/model.safetensors
+[2025-12-11 17:13:26,037][accelerate.checkpointing][INFO] - Optimizer state saved in experiments/noise_distillation/checkpoints/epoch_6/optimizer.bin
+[2025-12-11 17:13:26,041][accelerate.checkpointing][INFO] - Scheduler state saved in experiments/noise_distillation/checkpoints/epoch_6/scheduler.bin
+[2025-12-11 17:13:26,041][accelerate.checkpointing][INFO] - Sampler state for dataloader 0 saved in experiments/noise_distillation/checkpoints/epoch_6/sampler.bin
+[2025-12-11 17:13:26,041][accelerate.checkpointing][INFO] - Sampler state for dataloader 1 saved in experiments/noise_distillation/checkpoints/epoch_6/sampler_1.bin
+[2025-12-11 17:13:26,043][accelerate.checkpointing][INFO] - Gradient scaler state saved in experiments/noise_distillation/checkpoints/epoch_6/scaler.pt
+[2025-12-11 17:13:26,045][accelerate.checkpointing][INFO] - Random states saved in experiments/noise_distillation/checkpoints/epoch_6/random_states_0.pkl
+[2025-12-11 17:13:26,046][accelerate.checkpointing][INFO] - Saving the state of NoiseTrainer to experiments/noise_distillation/checkpoints/epoch_6/custom_checkpoint_0.pkl
+[2025-12-11 17:13:26,061][accelerate.accelerator][INFO] - Saving current state to experiments/noise_distillation/checkpoints/best
+[2025-12-11 17:13:26,636][accelerate.checkpointing][INFO] - Model weights saved in experiments/noise_distillation/checkpoints/best/model.safetensors
+[2025-12-11 17:13:26,680][accelerate.checkpointing][INFO] - Optimizer state saved in experiments/noise_distillation/checkpoints/best/optimizer.bin
+[2025-12-11 17:13:26,682][accelerate.checkpointing][INFO] - Scheduler state saved in experiments/noise_distillation/checkpoints/best/scheduler.bin
+[2025-12-11 17:13:26,682][accelerate.checkpointing][INFO] - Sampler state for dataloader 0 saved in experiments/noise_distillation/checkpoints/best/sampler.bin
+[2025-12-11 17:13:26,682][accelerate.checkpointing][INFO] - Sampler state for dataloader 1 saved in experiments/noise_distillation/checkpoints/best/sampler_1.bin
+[2025-12-11 17:13:26,684][accelerate.checkpointing][INFO] - Gradient scaler state saved in experiments/noise_distillation/checkpoints/best/scaler.pt
+[2025-12-11 17:13:26,685][accelerate.checkpointing][INFO] - Random states saved in experiments/noise_distillation/checkpoints/best/random_states_0.pkl
+[2025-12-11 17:13:26,685][accelerate.checkpointing][INFO] - Saving the state of NoiseTrainer to experiments/noise_distillation/checkpoints/best/custom_checkpoint_0.pkl
+[2025-12-11 17:13:26,687][accel_hydra.utils.logging.experiments/noise_distillation//train.log][INFO] - training epoch 6 ended
+[2025-12-11 19:11:32,043][accelerate.accelerator][INFO] - Saving current state to experiments/noise_distillation/checkpoints/epoch_7
+[2025-12-11 19:11:32,567][accelerate.checkpointing][INFO] - Model weights saved in experiments/noise_distillation/checkpoints/epoch_7/model.safetensors
+[2025-12-11 19:11:32,614][accelerate.checkpointing][INFO] - Optimizer state saved in experiments/noise_distillation/checkpoints/epoch_7/optimizer.bin
+[2025-12-11 19:11:32,616][accelerate.checkpointing][INFO] - Scheduler state saved in experiments/noise_distillation/checkpoints/epoch_7/scheduler.bin
+[2025-12-11 19:11:32,616][accelerate.checkpointing][INFO] - Sampler state for dataloader 0 saved in experiments/noise_distillation/checkpoints/epoch_7/sampler.bin
+[2025-12-11 19:11:32,617][accelerate.checkpointing][INFO] - Sampler state for dataloader 1 saved in experiments/noise_distillation/checkpoints/epoch_7/sampler_1.bin
+[2025-12-11 19:11:32,619][accelerate.checkpointing][INFO] - Gradient scaler state saved in experiments/noise_distillation/checkpoints/epoch_7/scaler.pt
+[2025-12-11 19:11:32,622][accelerate.checkpointing][INFO] - Random states saved in experiments/noise_distillation/checkpoints/epoch_7/random_states_0.pkl
+[2025-12-11 19:11:32,622][accelerate.checkpointing][INFO] - Saving the state of NoiseTrainer to experiments/noise_distillation/checkpoints/epoch_7/custom_checkpoint_0.pkl
+[2025-12-11 19:11:32,637][accelerate.accelerator][INFO] - Saving current state to experiments/noise_distillation/checkpoints/best
+[2025-12-11 19:11:33,175][accelerate.checkpointing][INFO] - Model weights saved in experiments/noise_distillation/checkpoints/best/model.safetensors
+[2025-12-11 19:11:33,219][accelerate.checkpointing][INFO] - Optimizer state saved in experiments/noise_distillation/checkpoints/best/optimizer.bin
+[2025-12-11 19:11:33,220][accelerate.checkpointing][INFO] - Scheduler state saved in experiments/noise_distillation/checkpoints/best/scheduler.bin
+[2025-12-11 19:11:33,221][accelerate.checkpointing][INFO] - Sampler state for dataloader 0 saved in experiments/noise_distillation/checkpoints/best/sampler.bin
+[2025-12-11 19:11:33,221][accelerate.checkpointing][INFO] - Sampler state for dataloader 1 saved in experiments/noise_distillation/checkpoints/best/sampler_1.bin
+[2025-12-11 19:11:33,222][accelerate.checkpointing][INFO] - Gradient scaler state saved in experiments/noise_distillation/checkpoints/best/scaler.pt
+[2025-12-11 19:11:33,224][accelerate.checkpointing][INFO] - Random states saved in experiments/noise_distillation/checkpoints/best/random_states_0.pkl
+[2025-12-11 19:11:33,224][accelerate.checkpointing][INFO] - Saving the state of NoiseTrainer to experiments/noise_distillation/checkpoints/best/custom_checkpoint_0.pkl
+[2025-12-11 19:11:33,226][accel_hydra.utils.logging.experiments/noise_distillation//train.log][INFO] - training epoch 7 ended
+[2025-12-11 21:09:37,733][accelerate.accelerator][INFO] - Saving current state to experiments/noise_distillation/checkpoints/epoch_8
+[2025-12-11 21:09:38,267][accelerate.checkpointing][INFO] - Model weights saved in experiments/noise_distillation/checkpoints/epoch_8/model.safetensors
+[2025-12-11 21:09:38,315][accelerate.checkpointing][INFO] - Optimizer state saved in experiments/noise_distillation/checkpoints/epoch_8/optimizer.bin
+[2025-12-11 21:09:38,317][accelerate.checkpointing][INFO] - Scheduler state saved in experiments/noise_distillation/checkpoints/epoch_8/scheduler.bin
+[2025-12-11 21:09:38,317][accelerate.checkpointing][INFO] - Sampler state for dataloader 0 saved in experiments/noise_distillation/checkpoints/epoch_8/sampler.bin
+[2025-12-11 21:09:38,318][accelerate.checkpointing][INFO] - Sampler state for dataloader 1 saved in experiments/noise_distillation/checkpoints/epoch_8/sampler_1.bin
+[2025-12-11 21:09:38,320][accelerate.checkpointing][INFO] - Gradient scaler state saved in experiments/noise_distillation/checkpoints/epoch_8/scaler.pt
+[2025-12-11 21:09:38,323][accelerate.checkpointing][INFO] - Random states saved in experiments/noise_distillation/checkpoints/epoch_8/random_states_0.pkl
+[2025-12-11 21:09:38,323][accelerate.checkpointing][INFO] - Saving the state of NoiseTrainer to experiments/noise_distillation/checkpoints/epoch_8/custom_checkpoint_0.pkl
+[2025-12-11 21:09:38,340][accelerate.accelerator][INFO] - Saving current state to experiments/noise_distillation/checkpoints/best
+[2025-12-11 21:09:38,893][accelerate.checkpointing][INFO] - Model weights saved in experiments/noise_distillation/checkpoints/best/model.safetensors
+[2025-12-11 21:09:38,939][accelerate.checkpointing][INFO] - Optimizer state saved in experiments/noise_distillation/checkpoints/best/optimizer.bin
+[2025-12-11 21:09:38,941][accelerate.checkpointing][INFO] - Scheduler state saved in experiments/noise_distillation/checkpoints/best/scheduler.bin
+[2025-12-11 21:09:38,941][accelerate.checkpointing][INFO] - Sampler state for dataloader 0 saved in experiments/noise_distillation/checkpoints/best/sampler.bin
+[2025-12-11 21:09:38,942][accelerate.checkpointing][INFO] - Sampler state for dataloader 1 saved in experiments/noise_distillation/checkpoints/best/sampler_1.bin
+[2025-12-11 21:09:38,943][accelerate.checkpointing][INFO] - Gradient scaler state saved in experiments/noise_distillation/checkpoints/best/scaler.pt
+[2025-12-11 21:09:38,945][accelerate.checkpointing][INFO] - Random states saved in experiments/noise_distillation/checkpoints/best/random_states_0.pkl
+[2025-12-11 21:09:38,946][accelerate.checkpointing][INFO] - Saving the state of NoiseTrainer to experiments/noise_distillation/checkpoints/best/custom_checkpoint_0.pkl
+[2025-12-11 21:09:38,947][accel_hydra.utils.logging.experiments/noise_distillation//train.log][INFO] - training epoch 8 ended
+[2025-12-11 23:07:32,260][accelerate.accelerator][INFO] - Saving current state to experiments/noise_distillation/checkpoints/epoch_9
+[2025-12-11 23:07:32,788][accelerate.checkpointing][INFO] - Model weights saved in experiments/noise_distillation/checkpoints/epoch_9/model.safetensors
+[2025-12-11 23:07:32,837][accelerate.checkpointing][INFO] - Optimizer state saved in experiments/noise_distillation/checkpoints/epoch_9/optimizer.bin
+[2025-12-11 23:07:32,840][accelerate.checkpointing][INFO] - Scheduler state saved in experiments/noise_distillation/checkpoints/epoch_9/scheduler.bin
+[2025-12-11 23:07:32,840][accelerate.checkpointing][INFO] - Sampler state for dataloader 0 saved in experiments/noise_distillation/checkpoints/epoch_9/sampler.bin
+[2025-12-11 23:07:32,840][accelerate.checkpointing][INFO] - Sampler state for dataloader 1 saved in experiments/noise_distillation/checkpoints/epoch_9/sampler_1.bin
+[2025-12-11 23:07:32,842][accelerate.checkpointing][INFO] - Gradient scaler state saved in experiments/noise_distillation/checkpoints/epoch_9/scaler.pt
+[2025-12-11 23:07:32,845][accelerate.checkpointing][INFO] - Random states saved in experiments/noise_distillation/checkpoints/epoch_9/random_states_0.pkl
+[2025-12-11 23:07:32,845][accelerate.checkpointing][INFO] - Saving the state of NoiseTrainer to experiments/noise_distillation/checkpoints/epoch_9/custom_checkpoint_0.pkl
+[2025-12-11 23:07:32,860][accelerate.accelerator][INFO] - Saving current state to experiments/noise_distillation/checkpoints/best
+[2025-12-11 23:07:33,399][accelerate.checkpointing][INFO] - Model weights saved in experiments/noise_distillation/checkpoints/best/model.safetensors
+[2025-12-11 23:07:33,453][accelerate.checkpointing][INFO] - Optimizer state saved in experiments/noise_distillation/checkpoints/best/optimizer.bin
+[2025-12-11 23:07:33,455][accelerate.checkpointing][INFO] - Scheduler state saved in experiments/noise_distillation/checkpoints/best/scheduler.bin
+[2025-12-11 23:07:33,455][accelerate.checkpointing][INFO] - Sampler state for dataloader 0 saved in experiments/noise_distillation/checkpoints/best/sampler.bin
+[2025-12-11 23:07:33,455][accelerate.checkpointing][INFO] - Sampler state for dataloader 1 saved in experiments/noise_distillation/checkpoints/best/sampler_1.bin
+[2025-12-11 23:07:33,456][accelerate.checkpointing][INFO] - Gradient scaler state saved in experiments/noise_distillation/checkpoints/best/scaler.pt
+[2025-12-11 23:07:33,458][accelerate.checkpointing][INFO] - Random states saved in experiments/noise_distillation/checkpoints/best/random_states_0.pkl
+[2025-12-11 23:07:33,458][accelerate.checkpointing][INFO] - Saving the state of NoiseTrainer to experiments/noise_distillation/checkpoints/best/custom_checkpoint_0.pkl
+[2025-12-11 23:07:33,460][accel_hydra.utils.logging.experiments/noise_distillation//train.log][INFO] - training epoch 9 ended
+[2025-12-12 01:05:28,144][accelerate.accelerator][INFO] - Saving current state to experiments/noise_distillation/checkpoints/epoch_10
+[2025-12-12 01:05:28,674][accelerate.checkpointing][INFO] - Model weights saved in experiments/noise_distillation/checkpoints/epoch_10/model.safetensors
+[2025-12-12 01:05:28,722][accelerate.checkpointing][INFO] - Optimizer state saved in experiments/noise_distillation/checkpoints/epoch_10/optimizer.bin
+[2025-12-12 01:05:28,725][accelerate.checkpointing][INFO] - Scheduler state saved in experiments/noise_distillation/checkpoints/epoch_10/scheduler.bin
+[2025-12-12 01:05:28,725][accelerate.checkpointing][INFO] - Sampler state for dataloader 0 saved in experiments/noise_distillation/checkpoints/epoch_10/sampler.bin
+[2025-12-12 01:05:28,726][accelerate.checkpointing][INFO] - Sampler state for dataloader 1 saved in experiments/noise_distillation/checkpoints/epoch_10/sampler_1.bin
+[2025-12-12 01:05:28,727][accelerate.checkpointing][INFO] - Gradient scaler state saved in experiments/noise_distillation/checkpoints/epoch_10/scaler.pt
+[2025-12-12 01:05:28,730][accelerate.checkpointing][INFO] - Random states saved in experiments/noise_distillation/checkpoints/epoch_10/random_states_0.pkl
+[2025-12-12 01:05:28,730][accelerate.checkpointing][INFO] - Saving the state of NoiseTrainer to experiments/noise_distillation/checkpoints/epoch_10/custom_checkpoint_0.pkl
+[2025-12-12 01:05:28,744][accelerate.accelerator][INFO] - Saving current state to experiments/noise_distillation/checkpoints/best
+[2025-12-12 01:05:29,276][accelerate.checkpointing][INFO] - Model weights saved in experiments/noise_distillation/checkpoints/best/model.safetensors
+[2025-12-12 01:05:29,321][accelerate.checkpointing][INFO] - Optimizer state saved in experiments/noise_distillation/checkpoints/best/optimizer.bin
+[2025-12-12 01:05:29,323][accelerate.checkpointing][INFO] - Scheduler state saved in experiments/noise_distillation/checkpoints/best/scheduler.bin
+[2025-12-12 01:05:29,323][accelerate.checkpointing][INFO] - Sampler state for dataloader 0 saved in experiments/noise_distillation/checkpoints/best/sampler.bin
+[2025-12-12 01:05:29,323][accelerate.checkpointing][INFO] - Sampler state for dataloader 1 saved in experiments/noise_distillation/checkpoints/best/sampler_1.bin
+[2025-12-12 01:05:29,324][accelerate.checkpointing][INFO] - Gradient scaler state saved in experiments/noise_distillation/checkpoints/best/scaler.pt
+[2025-12-12 01:05:29,326][accelerate.checkpointing][INFO] - Random states saved in experiments/noise_distillation/checkpoints/best/random_states_0.pkl
+[2025-12-12 01:05:29,326][accelerate.checkpointing][INFO] - Saving the state of NoiseTrainer to experiments/noise_distillation/checkpoints/best/custom_checkpoint_0.pkl
+[2025-12-12 01:05:29,327][accel_hydra.utils.logging.experiments/noise_distillation//train.log][INFO] - training epoch 10 ended
+[2025-12-12 03:04:05,293][accelerate.accelerator][INFO] - Saving current state to experiments/noise_distillation/checkpoints/epoch_11
+[2025-12-12 03:04:05,850][accelerate.checkpointing][INFO] - Model weights saved in experiments/noise_distillation/checkpoints/epoch_11/model.safetensors
+[2025-12-12 03:04:05,896][accelerate.checkpointing][INFO] - Optimizer state saved in experiments/noise_distillation/checkpoints/epoch_11/optimizer.bin
+[2025-12-12 03:04:05,899][accelerate.checkpointing][INFO] - Scheduler state saved in experiments/noise_distillation/checkpoints/epoch_11/scheduler.bin
+[2025-12-12 03:04:05,899][accelerate.checkpointing][INFO] - Sampler state for dataloader 0 saved in experiments/noise_distillation/checkpoints/epoch_11/sampler.bin
+[2025-12-12 03:04:05,900][accelerate.checkpointing][INFO] - Sampler state for dataloader 1 saved in experiments/noise_distillation/checkpoints/epoch_11/sampler_1.bin
+[2025-12-12 03:04:05,902][accelerate.checkpointing][INFO] - Gradient scaler state saved in experiments/noise_distillation/checkpoints/epoch_11/scaler.pt
+[2025-12-12 03:04:05,904][accelerate.checkpointing][INFO] - Random states saved in experiments/noise_distillation/checkpoints/epoch_11/random_states_0.pkl
+[2025-12-12 03:04:05,905][accelerate.checkpointing][INFO] - Saving the state of NoiseTrainer to experiments/noise_distillation/checkpoints/epoch_11/custom_checkpoint_0.pkl
+[2025-12-12 03:04:05,919][accelerate.accelerator][INFO] - Saving current state to experiments/noise_distillation/checkpoints/best
+[2025-12-12 03:04:06,457][accelerate.checkpointing][INFO] - Model weights saved in experiments/noise_distillation/checkpoints/best/model.safetensors
+[2025-12-12 03:04:06,500][accelerate.checkpointing][INFO] - Optimizer state saved in experiments/noise_distillation/checkpoints/best/optimizer.bin
+[2025-12-12 03:04:06,502][accelerate.checkpointing][INFO] - Scheduler state saved in experiments/noise_distillation/checkpoints/best/scheduler.bin
+[2025-12-12 03:04:06,502][accelerate.checkpointing][INFO] - Sampler state for dataloader 0 saved in experiments/noise_distillation/checkpoints/best/sampler.bin
+[2025-12-12 03:04:06,502][accelerate.checkpointing][INFO] - Sampler state for dataloader 1 saved in experiments/noise_distillation/checkpoints/best/sampler_1.bin
+[2025-12-12 03:04:06,504][accelerate.checkpointing][INFO] - Gradient scaler state saved in experiments/noise_distillation/checkpoints/best/scaler.pt
+[2025-12-12 03:04:06,505][accelerate.checkpointing][INFO] - Random states saved in experiments/noise_distillation/checkpoints/best/random_states_0.pkl
+[2025-12-12 03:04:06,506][accelerate.checkpointing][INFO] - Saving the state of NoiseTrainer to experiments/noise_distillation/checkpoints/best/custom_checkpoint_0.pkl
+[2025-12-12 03:04:06,507][accel_hydra.utils.logging.experiments/noise_distillation//train.log][INFO] - training epoch 11 ended
+[2025-12-12 05:02:07,307][accelerate.accelerator][INFO] - Saving current state to experiments/noise_distillation/checkpoints/epoch_12
+[2025-12-12 05:02:07,880][accelerate.checkpointing][INFO] - Model weights saved in experiments/noise_distillation/checkpoints/epoch_12/model.safetensors
+[2025-12-12 05:02:07,941][accelerate.checkpointing][INFO] - Optimizer state saved in experiments/noise_distillation/checkpoints/epoch_12/optimizer.bin
+[2025-12-12 05:02:07,946][accelerate.checkpointing][INFO] - Scheduler state saved in experiments/noise_distillation/checkpoints/epoch_12/scheduler.bin
+[2025-12-12 05:02:07,946][accelerate.checkpointing][INFO] - Sampler state for dataloader 0 saved in experiments/noise_distillation/checkpoints/epoch_12/sampler.bin
+[2025-12-12 05:02:07,946][accelerate.checkpointing][INFO] - Sampler state for dataloader 1 saved in experiments/noise_distillation/checkpoints/epoch_12/sampler_1.bin
+[2025-12-12 05:02:07,948][accelerate.checkpointing][INFO] - Gradient scaler state saved in experiments/noise_distillation/checkpoints/epoch_12/scaler.pt
+[2025-12-12 05:02:07,951][accelerate.checkpointing][INFO] - Random states saved in experiments/noise_distillation/checkpoints/epoch_12/random_states_0.pkl
+[2025-12-12 05:02:07,951][accelerate.checkpointing][INFO] - Saving the state of NoiseTrainer to experiments/noise_distillation/checkpoints/epoch_12/custom_checkpoint_0.pkl
+[2025-12-12 05:02:07,970][accelerate.accelerator][INFO] - Saving current state to experiments/noise_distillation/checkpoints/best
+[2025-12-12 05:02:08,582][accelerate.checkpointing][INFO] - Model weights saved in experiments/noise_distillation/checkpoints/best/model.safetensors
+[2025-12-12 05:02:08,636][accelerate.checkpointing][INFO] - Optimizer state saved in experiments/noise_distillation/checkpoints/best/optimizer.bin
+[2025-12-12 05:02:08,638][accelerate.checkpointing][INFO] - Scheduler state saved in experiments/noise_distillation/checkpoints/best/scheduler.bin
+[2025-12-12 05:02:08,639][accelerate.checkpointing][INFO] - Sampler state for dataloader 0 saved in experiments/noise_distillation/checkpoints/best/sampler.bin
+[2025-12-12 05:02:08,639][accelerate.checkpointing][INFO] - Sampler state for dataloader 1 saved in experiments/noise_distillation/checkpoints/best/sampler_1.bin
+[2025-12-12 05:02:08,641][accelerate.checkpointing][INFO] - Gradient scaler state saved in experiments/noise_distillation/checkpoints/best/scaler.pt
+[2025-12-12 05:02:08,644][accelerate.checkpointing][INFO] - Random states saved in experiments/noise_distillation/checkpoints/best/random_states_0.pkl
+[2025-12-12 05:02:08,644][accelerate.checkpointing][INFO] - Saving the state of NoiseTrainer to experiments/noise_distillation/checkpoints/best/custom_checkpoint_0.pkl
+[2025-12-12 05:02:08,646][accel_hydra.utils.logging.experiments/noise_distillation//train.log][INFO] - training epoch 12 ended
+[2025-12-12 07:00:09,896][accelerate.accelerator][INFO] - Saving current state to experiments/noise_distillation/checkpoints/epoch_13
+[2025-12-12 07:00:10,445][accelerate.checkpointing][INFO] - Model weights saved in experiments/noise_distillation/checkpoints/epoch_13/model.safetensors
+[2025-12-12 07:00:10,493][accelerate.checkpointing][INFO] - Optimizer state saved in experiments/noise_distillation/checkpoints/epoch_13/optimizer.bin
+[2025-12-12 07:00:10,496][accelerate.checkpointing][INFO] - Scheduler state saved in experiments/noise_distillation/checkpoints/epoch_13/scheduler.bin
+[2025-12-12 07:00:10,496][accelerate.checkpointing][INFO] - Sampler state for dataloader 0 saved in experiments/noise_distillation/checkpoints/epoch_13/sampler.bin
+[2025-12-12 07:00:10,496][accelerate.checkpointing][INFO] - Sampler state for dataloader 1 saved in experiments/noise_distillation/checkpoints/epoch_13/sampler_1.bin
+[2025-12-12 07:00:10,498][accelerate.checkpointing][INFO] - Gradient scaler state saved in experiments/noise_distillation/checkpoints/epoch_13/scaler.pt
+[2025-12-12 07:00:10,501][accelerate.checkpointing][INFO] - Random states saved in experiments/noise_distillation/checkpoints/epoch_13/random_states_0.pkl
+[2025-12-12 07:00:10,501][accelerate.checkpointing][INFO] - Saving the state of NoiseTrainer to experiments/noise_distillation/checkpoints/epoch_13/custom_checkpoint_0.pkl
+[2025-12-12 07:00:10,520][accelerate.accelerator][INFO] - Saving current state to experiments/noise_distillation/checkpoints/best
+[2025-12-12 07:00:11,097][accelerate.checkpointing][INFO] - Model weights saved in experiments/noise_distillation/checkpoints/best/model.safetensors
+[2025-12-12 07:00:11,149][accelerate.checkpointing][INFO] - Optimizer state saved in experiments/noise_distillation/checkpoints/best/optimizer.bin
+[2025-12-12 07:00:11,152][accelerate.checkpointing][INFO] - Scheduler state saved in experiments/noise_distillation/checkpoints/best/scheduler.bin
+[2025-12-12 07:00:11,152][accelerate.checkpointing][INFO] - Sampler state for dataloader 0 saved in experiments/noise_distillation/checkpoints/best/sampler.bin
+[2025-12-12 07:00:11,153][accelerate.checkpointing][INFO] - Sampler state for dataloader 1 saved in experiments/noise_distillation/checkpoints/best/sampler_1.bin
+[2025-12-12 07:00:11,154][accelerate.checkpointing][INFO] - Gradient scaler state saved in experiments/noise_distillation/checkpoints/best/scaler.pt
+[2025-12-12 07:00:11,157][accelerate.checkpointing][INFO] - Random states saved in experiments/noise_distillation/checkpoints/best/random_states_0.pkl
+[2025-12-12 07:00:11,157][accelerate.checkpointing][INFO] - Saving the state of NoiseTrainer to experiments/noise_distillation/checkpoints/best/custom_checkpoint_0.pkl
+[2025-12-12 07:00:11,159][accel_hydra.utils.logging.experiments/noise_distillation//train.log][INFO] - training epoch 13 ended
+[2025-12-12 08:58:14,955][accelerate.accelerator][INFO] - Saving current state to experiments/noise_distillation/checkpoints/epoch_14
+[2025-12-12 08:58:15,519][accelerate.checkpointing][INFO] - Model weights saved in experiments/noise_distillation/checkpoints/epoch_14/model.safetensors
+[2025-12-12 08:58:15,573][accelerate.checkpointing][INFO] - Optimizer state saved in experiments/noise_distillation/checkpoints/epoch_14/optimizer.bin
+[2025-12-12 08:58:15,576][accelerate.checkpointing][INFO] - Scheduler state saved in experiments/noise_distillation/checkpoints/epoch_14/scheduler.bin
+[2025-12-12 08:58:15,576][accelerate.checkpointing][INFO] - Sampler state for dataloader 0 saved in experiments/noise_distillation/checkpoints/epoch_14/sampler.bin
+[2025-12-12 08:58:15,576][accelerate.checkpointing][INFO] - Sampler state for dataloader 1 saved in experiments/noise_distillation/checkpoints/epoch_14/sampler_1.bin
+[2025-12-12 08:58:15,579][accelerate.checkpointing][INFO] - Gradient scaler state saved in experiments/noise_distillation/checkpoints/epoch_14/scaler.pt
+[2025-12-12 08:58:15,582][accelerate.checkpointing][INFO] - Random states saved in experiments/noise_distillation/checkpoints/epoch_14/random_states_0.pkl
+[2025-12-12 08:58:15,582][accelerate.checkpointing][INFO] - Saving the state of NoiseTrainer to experiments/noise_distillation/checkpoints/epoch_14/custom_checkpoint_0.pkl
+[2025-12-12 08:58:15,599][accelerate.accelerator][INFO] - Saving current state to experiments/noise_distillation/checkpoints/best
+[2025-12-12 08:58:16,177][accelerate.checkpointing][INFO] - Model weights saved in experiments/noise_distillation/checkpoints/best/model.safetensors
+[2025-12-12 08:58:16,229][accelerate.checkpointing][INFO] - Optimizer state saved in experiments/noise_distillation/checkpoints/best/optimizer.bin
+[2025-12-12 08:58:16,231][accelerate.checkpointing][INFO] - Scheduler state saved in experiments/noise_distillation/checkpoints/best/scheduler.bin
+[2025-12-12 08:58:16,232][accelerate.checkpointing][INFO] - Sampler state for dataloader 0 saved in experiments/noise_distillation/checkpoints/best/sampler.bin
+[2025-12-12 08:58:16,232][accelerate.checkpointing][INFO] - Sampler state for dataloader 1 saved in experiments/noise_distillation/checkpoints/best/sampler_1.bin
+[2025-12-12 08:58:16,233][accelerate.checkpointing][INFO] - Gradient scaler state saved in experiments/noise_distillation/checkpoints/best/scaler.pt
+[2025-12-12 08:58:16,236][accelerate.checkpointing][INFO] - Random states saved in experiments/noise_distillation/checkpoints/best/random_states_0.pkl
+[2025-12-12 08:58:16,236][accelerate.checkpointing][INFO] - Saving the state of NoiseTrainer to experiments/noise_distillation/checkpoints/best/custom_checkpoint_0.pkl
+[2025-12-12 08:58:16,238][accel_hydra.utils.logging.experiments/noise_distillation//train.log][INFO] - training epoch 14 ended
+[2025-12-12 10:56:40,945][accelerate.accelerator][INFO] - Saving current state to experiments/noise_distillation/checkpoints/epoch_15
+[2025-12-12 10:56:41,498][accelerate.checkpointing][INFO] - Model weights saved in experiments/noise_distillation/checkpoints/epoch_15/model.safetensors
+[2025-12-12 10:56:41,548][accelerate.checkpointing][INFO] - Optimizer state saved in experiments/noise_distillation/checkpoints/epoch_15/optimizer.bin
+[2025-12-12 10:56:41,550][accelerate.checkpointing][INFO] - Scheduler state saved in experiments/noise_distillation/checkpoints/epoch_15/scheduler.bin
+[2025-12-12 10:56:41,551][accelerate.checkpointing][INFO] - Sampler state for dataloader 0 saved in experiments/noise_distillation/checkpoints/epoch_15/sampler.bin
+[2025-12-12 10:56:41,551][accelerate.checkpointing][INFO] - Sampler state for dataloader 1 saved in experiments/noise_distillation/checkpoints/epoch_15/sampler_1.bin
+[2025-12-12 10:56:41,553][accelerate.checkpointing][INFO] - Gradient scaler state saved in experiments/noise_distillation/checkpoints/epoch_15/scaler.pt
+[2025-12-12 10:56:41,555][accelerate.checkpointing][INFO] - Random states saved in experiments/noise_distillation/checkpoints/epoch_15/random_states_0.pkl
+[2025-12-12 10:56:41,556][accelerate.checkpointing][INFO] - Saving the state of NoiseTrainer to experiments/noise_distillation/checkpoints/epoch_15/custom_checkpoint_0.pkl
+[2025-12-12 10:56:41,570][accelerate.accelerator][INFO] - Saving current state to experiments/noise_distillation/checkpoints/best
+[2025-12-12 10:56:42,118][accelerate.checkpointing][INFO] - Model weights saved in experiments/noise_distillation/checkpoints/best/model.safetensors
+[2025-12-12 10:56:42,164][accelerate.checkpointing][INFO] - Optimizer state saved in experiments/noise_distillation/checkpoints/best/optimizer.bin
+[2025-12-12 10:56:42,166][accelerate.checkpointing][INFO] - Scheduler state saved in experiments/noise_distillation/checkpoints/best/scheduler.bin
+[2025-12-12 10:56:42,166][accelerate.checkpointing][INFO] - Sampler state for dataloader 0 saved in experiments/noise_distillation/checkpoints/best/sampler.bin
+[2025-12-12 10:56:42,166][accelerate.checkpointing][INFO] - Sampler state for dataloader 1 saved in experiments/noise_distillation/checkpoints/best/sampler_1.bin
+[2025-12-12 10:56:42,167][accelerate.checkpointing][INFO] - Gradient scaler state saved in experiments/noise_distillation/checkpoints/best/scaler.pt
+[2025-12-12 10:56:42,169][accelerate.checkpointing][INFO] - Random states saved in experiments/noise_distillation/checkpoints/best/random_states_0.pkl
+[2025-12-12 10:56:42,170][accelerate.checkpointing][INFO] - Saving the state of NoiseTrainer to experiments/noise_distillation/checkpoints/best/custom_checkpoint_0.pkl
+[2025-12-12 10:56:42,171][accel_hydra.utils.logging.experiments/noise_distillation//train.log][INFO] - training epoch 15 ended
+[2025-12-12 12:55:20,672][accelerate.accelerator][INFO] - Saving current state to experiments/noise_distillation/checkpoints/epoch_16
+[2025-12-12 12:55:21,250][accelerate.checkpointing][INFO] - Model weights saved in experiments/noise_distillation/checkpoints/epoch_16/model.safetensors
+[2025-12-12 12:55:21,297][accelerate.checkpointing][INFO] - Optimizer state saved in experiments/noise_distillation/checkpoints/epoch_16/optimizer.bin
+[2025-12-12 12:55:21,300][accelerate.checkpointing][INFO] - Scheduler state saved in experiments/noise_distillation/checkpoints/epoch_16/scheduler.bin
+[2025-12-12 12:55:21,300][accelerate.checkpointing][INFO] - Sampler state for dataloader 0 saved in experiments/noise_distillation/checkpoints/epoch_16/sampler.bin
+[2025-12-12 12:55:21,301][accelerate.checkpointing][INFO] - Sampler state for dataloader 1 saved in experiments/noise_distillation/checkpoints/epoch_16/sampler_1.bin
+[2025-12-12 12:55:21,303][accelerate.checkpointing][INFO] - Gradient scaler state saved in experiments/noise_distillation/checkpoints/epoch_16/scaler.pt
+[2025-12-12 12:55:21,305][accelerate.checkpointing][INFO] - Random states saved in experiments/noise_distillation/checkpoints/epoch_16/random_states_0.pkl
+[2025-12-12 12:55:21,305][accelerate.checkpointing][INFO] - Saving the state of NoiseTrainer to experiments/noise_distillation/checkpoints/epoch_16/custom_checkpoint_0.pkl
+[2025-12-12 12:55:21,327][accelerate.accelerator][INFO] - Saving current state to experiments/noise_distillation/checkpoints/best
+[2025-12-12 12:55:21,892][accelerate.checkpointing][INFO] - Model weights saved in experiments/noise_distillation/checkpoints/best/model.safetensors
+[2025-12-12 12:55:21,944][accelerate.checkpointing][INFO] - Optimizer state saved in experiments/noise_distillation/checkpoints/best/optimizer.bin
+[2025-12-12 12:55:21,946][accelerate.checkpointing][INFO] - Scheduler state saved in experiments/noise_distillation/checkpoints/best/scheduler.bin
+[2025-12-12 12:55:21,947][accelerate.checkpointing][INFO] - Sampler state for dataloader 0 saved in experiments/noise_distillation/checkpoints/best/sampler.bin
+[2025-12-12 12:55:21,947][accelerate.checkpointing][INFO] - Sampler state for dataloader 1 saved in experiments/noise_distillation/checkpoints/best/sampler_1.bin
+[2025-12-12 12:55:21,949][accelerate.checkpointing][INFO] - Gradient scaler state saved in experiments/noise_distillation/checkpoints/best/scaler.pt
+[2025-12-12 12:55:21,952][accelerate.checkpointing][INFO] - Random states saved in experiments/noise_distillation/checkpoints/best/random_states_0.pkl
+[2025-12-12 12:55:21,952][accelerate.checkpointing][INFO] - Saving the state of NoiseTrainer to experiments/noise_distillation/checkpoints/best/custom_checkpoint_0.pkl
+[2025-12-12 12:55:21,958][accel_hydra.utils.logging.experiments/noise_distillation//train.log][INFO] - training epoch 16 ended
+[2025-12-12 14:53:52,760][accelerate.accelerator][INFO] - Saving current state to experiments/noise_distillation/checkpoints/epoch_17
+[2025-12-12 14:53:53,329][accelerate.checkpointing][INFO] - Model weights saved in experiments/noise_distillation/checkpoints/epoch_17/model.safetensors
+[2025-12-12 14:53:53,379][accelerate.checkpointing][INFO] - Optimizer state saved in experiments/noise_distillation/checkpoints/epoch_17/optimizer.bin
+[2025-12-12 14:53:53,381][accelerate.checkpointing][INFO] - Scheduler state saved in experiments/noise_distillation/checkpoints/epoch_17/scheduler.bin
+[2025-12-12 14:53:53,382][accelerate.checkpointing][INFO] - Sampler state for dataloader 0 saved in experiments/noise_distillation/checkpoints/epoch_17/sampler.bin
+[2025-12-12 14:53:53,382][accelerate.checkpointing][INFO] - Sampler state for dataloader 1 saved in experiments/noise_distillation/checkpoints/epoch_17/sampler_1.bin
+[2025-12-12 14:53:53,384][accelerate.checkpointing][INFO] - Gradient scaler state saved in experiments/noise_distillation/checkpoints/epoch_17/scaler.pt
+[2025-12-12 14:53:53,386][accelerate.checkpointing][INFO] - Random states saved in experiments/noise_distillation/checkpoints/epoch_17/random_states_0.pkl
+[2025-12-12 14:53:53,386][accelerate.checkpointing][INFO] - Saving the state of NoiseTrainer to experiments/noise_distillation/checkpoints/epoch_17/custom_checkpoint_0.pkl
+[2025-12-12 14:53:53,401][accelerate.accelerator][INFO] - Saving current state to experiments/noise_distillation/checkpoints/best
+[2025-12-12 14:53:53,971][accelerate.checkpointing][INFO] - Model weights saved in experiments/noise_distillation/checkpoints/best/model.safetensors
+[2025-12-12 14:53:54,016][accelerate.checkpointing][INFO] - Optimizer state saved in experiments/noise_distillation/checkpoints/best/optimizer.bin
+[2025-12-12 14:53:54,019][accelerate.checkpointing][INFO] - Scheduler state saved in experiments/noise_distillation/checkpoints/best/scheduler.bin
+[2025-12-12 14:53:54,019][accelerate.checkpointing][INFO] - Sampler state for dataloader 0 saved in experiments/noise_distillation/checkpoints/best/sampler.bin
+[2025-12-12 14:53:54,020][accelerate.checkpointing][INFO] - Sampler state for dataloader 1 saved in experiments/noise_distillation/checkpoints/best/sampler_1.bin
+[2025-12-12 14:53:54,022][accelerate.checkpointing][INFO] - Gradient scaler state saved in experiments/noise_distillation/checkpoints/best/scaler.pt
+[2025-12-12 14:53:54,025][accelerate.checkpointing][INFO] - Random states saved in experiments/noise_distillation/checkpoints/best/random_states_0.pkl
+[2025-12-12 14:53:54,026][accelerate.checkpointing][INFO] - Saving the state of NoiseTrainer to experiments/noise_distillation/checkpoints/best/custom_checkpoint_0.pkl
+[2025-12-12 14:53:54,029][accel_hydra.utils.logging.experiments/noise_distillation//train.log][INFO] - training epoch 17 ended
+[2025-12-12 16:52:32,189][accelerate.accelerator][INFO] - Saving current state to experiments/noise_distillation/checkpoints/epoch_18
+[2025-12-12 16:52:32,729][accelerate.checkpointing][INFO] - Model weights saved in experiments/noise_distillation/checkpoints/epoch_18/model.safetensors
+[2025-12-12 16:52:32,775][accelerate.checkpointing][INFO] - Optimizer state saved in experiments/noise_distillation/checkpoints/epoch_18/optimizer.bin
+[2025-12-12 16:52:32,778][accelerate.checkpointing][INFO] - Scheduler state saved in experiments/noise_distillation/checkpoints/epoch_18/scheduler.bin
+[2025-12-12 16:52:32,778][accelerate.checkpointing][INFO] - Sampler state for dataloader 0 saved in experiments/noise_distillation/checkpoints/epoch_18/sampler.bin
+[2025-12-12 16:52:32,778][accelerate.checkpointing][INFO] - Sampler state for dataloader 1 saved in experiments/noise_distillation/checkpoints/epoch_18/sampler_1.bin
+[2025-12-12 16:52:32,780][accelerate.checkpointing][INFO] - Gradient scaler state saved in experiments/noise_distillation/checkpoints/epoch_18/scaler.pt
+[2025-12-12 16:52:32,783][accelerate.checkpointing][INFO] - Random states saved in experiments/noise_distillation/checkpoints/epoch_18/random_states_0.pkl
+[2025-12-12 16:52:32,783][accelerate.checkpointing][INFO] - Saving the state of NoiseTrainer to experiments/noise_distillation/checkpoints/epoch_18/custom_checkpoint_0.pkl
+[2025-12-12 16:52:32,797][accelerate.accelerator][INFO] - Saving current state to experiments/noise_distillation/checkpoints/best
+[2025-12-12 16:52:33,390][accelerate.checkpointing][INFO] - Model weights saved in experiments/noise_distillation/checkpoints/best/model.safetensors
+[2025-12-12 16:52:33,434][accelerate.checkpointing][INFO] - Optimizer state saved in experiments/noise_distillation/checkpoints/best/optimizer.bin
+[2025-12-12 16:52:33,436][accelerate.checkpointing][INFO] - Scheduler state saved in experiments/noise_distillation/checkpoints/best/scheduler.bin
+[2025-12-12 16:52:33,436][accelerate.checkpointing][INFO] - Sampler state for dataloader 0 saved in experiments/noise_distillation/checkpoints/best/sampler.bin
+[2025-12-12 16:52:33,436][accelerate.checkpointing][INFO] - Sampler state for dataloader 1 saved in experiments/noise_distillation/checkpoints/best/sampler_1.bin
+[2025-12-12 16:52:33,438][accelerate.checkpointing][INFO] - Gradient scaler state saved in experiments/noise_distillation/checkpoints/best/scaler.pt
+[2025-12-12 16:52:33,439][accelerate.checkpointing][INFO] - Random states saved in experiments/noise_distillation/checkpoints/best/random_states_0.pkl
+[2025-12-12 16:52:33,439][accelerate.checkpointing][INFO] - Saving the state of NoiseTrainer to experiments/noise_distillation/checkpoints/best/custom_checkpoint_0.pkl
+[2025-12-12 16:52:33,441][accel_hydra.utils.logging.experiments/noise_distillation//train.log][INFO] - training epoch 18 ended
+[2025-12-12 18:51:25,077][accelerate.accelerator][INFO] - Saving current state to experiments/noise_distillation/checkpoints/epoch_19
+[2025-12-12 18:51:25,622][accelerate.checkpointing][INFO] - Model weights saved in experiments/noise_distillation/checkpoints/epoch_19/model.safetensors
+[2025-12-12 18:51:25,674][accelerate.checkpointing][INFO] - Optimizer state saved in experiments/noise_distillation/checkpoints/epoch_19/optimizer.bin
+[2025-12-12 18:51:25,677][accelerate.checkpointing][INFO] - Scheduler state saved in experiments/noise_distillation/checkpoints/epoch_19/scheduler.bin
+[2025-12-12 18:51:25,678][accelerate.checkpointing][INFO] - Sampler state for dataloader 0 saved in experiments/noise_distillation/checkpoints/epoch_19/sampler.bin
+[2025-12-12 18:51:25,678][accelerate.checkpointing][INFO] - Sampler state for dataloader 1 saved in experiments/noise_distillation/checkpoints/epoch_19/sampler_1.bin
+[2025-12-12 18:51:25,680][accelerate.checkpointing][INFO] - Gradient scaler state saved in experiments/noise_distillation/checkpoints/epoch_19/scaler.pt
+[2025-12-12 18:51:25,683][accelerate.checkpointing][INFO] - Random states saved in experiments/noise_distillation/checkpoints/epoch_19/random_states_0.pkl
+[2025-12-12 18:51:25,683][accelerate.checkpointing][INFO] - Saving the state of NoiseTrainer to experiments/noise_distillation/checkpoints/epoch_19/custom_checkpoint_0.pkl
+[2025-12-12 18:51:25,697][accelerate.accelerator][INFO] - Saving current state to experiments/noise_distillation/checkpoints/best
+[2025-12-12 18:51:26,283][accelerate.checkpointing][INFO] - Model weights saved in experiments/noise_distillation/checkpoints/best/model.safetensors
+[2025-12-12 18:51:26,334][accelerate.checkpointing][INFO] - Optimizer state saved in experiments/noise_distillation/checkpoints/best/optimizer.bin
+[2025-12-12 18:51:26,336][accelerate.checkpointing][INFO] - Scheduler state saved in experiments/noise_distillation/checkpoints/best/scheduler.bin
+[2025-12-12 18:51:26,337][accelerate.checkpointing][INFO] - Sampler state for dataloader 0 saved in experiments/noise_distillation/checkpoints/best/sampler.bin
+[2025-12-12 18:51:26,337][accelerate.checkpointing][INFO] - Sampler state for dataloader 1 saved in experiments/noise_distillation/checkpoints/best/sampler_1.bin
+[2025-12-12 18:51:26,339][accelerate.checkpointing][INFO] - Gradient scaler state saved in experiments/noise_distillation/checkpoints/best/scaler.pt
+[2025-12-12 18:51:26,341][accelerate.checkpointing][INFO] - Random states saved in experiments/noise_distillation/checkpoints/best/random_states_0.pkl
+[2025-12-12 18:51:26,341][accelerate.checkpointing][INFO] - Saving the state of NoiseTrainer to experiments/noise_distillation/checkpoints/best/custom_checkpoint_0.pkl
+[2025-12-12 18:51:26,343][accel_hydra.utils.logging.experiments/noise_distillation//train.log][INFO] - training epoch 19 ended
+[2025-12-12 20:50:00,129][accelerate.accelerator][INFO] - Saving current state to experiments/noise_distillation/checkpoints/epoch_20
+[2025-12-12 20:50:00,701][accelerate.checkpointing][INFO] - Model weights saved in experiments/noise_distillation/checkpoints/epoch_20/model.safetensors
+[2025-12-12 20:50:00,755][accelerate.checkpointing][INFO] - Optimizer state saved in experiments/noise_distillation/checkpoints/epoch_20/optimizer.bin
+[2025-12-12 20:50:00,758][accelerate.checkpointing][INFO] - Scheduler state saved in experiments/noise_distillation/checkpoints/epoch_20/scheduler.bin
+[2025-12-12 20:50:00,758][accelerate.checkpointing][INFO] - Sampler state for dataloader 0 saved in experiments/noise_distillation/checkpoints/epoch_20/sampler.bin
+[2025-12-12 20:50:00,759][accelerate.checkpointing][INFO] - Sampler state for dataloader 1 saved in experiments/noise_distillation/checkpoints/epoch_20/sampler_1.bin
+[2025-12-12 20:50:00,761][accelerate.checkpointing][INFO] - Gradient scaler state saved in experiments/noise_distillation/checkpoints/epoch_20/scaler.pt
+[2025-12-12 20:50:00,763][accelerate.checkpointing][INFO] - Random states saved in experiments/noise_distillation/checkpoints/epoch_20/random_states_0.pkl
+[2025-12-12 20:50:00,763][accelerate.checkpointing][INFO] - Saving the state of NoiseTrainer to experiments/noise_distillation/checkpoints/epoch_20/custom_checkpoint_0.pkl
+[2025-12-12 20:50:00,778][accelerate.accelerator][INFO] - Saving current state to experiments/noise_distillation/checkpoints/best
+[2025-12-12 20:50:01,346][accelerate.checkpointing][INFO] - Model weights saved in experiments/noise_distillation/checkpoints/best/model.safetensors
+[2025-12-12 20:50:01,390][accelerate.checkpointing][INFO] - Optimizer state saved in experiments/noise_distillation/checkpoints/best/optimizer.bin
+[2025-12-12 20:50:01,391][accelerate.checkpointing][INFO] - Scheduler state saved in experiments/noise_distillation/checkpoints/best/scheduler.bin
+[2025-12-12 20:50:01,392][accelerate.checkpointing][INFO] - Sampler state for dataloader 0 saved in experiments/noise_distillation/checkpoints/best/sampler.bin
+[2025-12-12 20:50:01,392][accelerate.checkpointing][INFO] - Sampler state for dataloader 1 saved in experiments/noise_distillation/checkpoints/best/sampler_1.bin
+[2025-12-12 20:50:01,394][accelerate.checkpointing][INFO] - Gradient scaler state saved in experiments/noise_distillation/checkpoints/best/scaler.pt
+[2025-12-12 20:50:01,395][accelerate.checkpointing][INFO] - Random states saved in experiments/noise_distillation/checkpoints/best/random_states_0.pkl
+[2025-12-12 20:50:01,396][accelerate.checkpointing][INFO] - Saving the state of NoiseTrainer to experiments/noise_distillation/checkpoints/best/custom_checkpoint_0.pkl
+[2025-12-12 20:50:01,397][accel_hydra.utils.logging.experiments/noise_distillation//train.log][INFO] - training epoch 20 ended
+[2025-12-12 22:47:44,271][accelerate.accelerator][INFO] - Saving current state to experiments/noise_distillation/checkpoints/epoch_21
+[2025-12-12 22:47:44,822][accelerate.checkpointing][INFO] - Model weights saved in experiments/noise_distillation/checkpoints/epoch_21/model.safetensors
+[2025-12-12 22:47:44,880][accelerate.checkpointing][INFO] - Optimizer state saved in experiments/noise_distillation/checkpoints/epoch_21/optimizer.bin
+[2025-12-12 22:47:44,884][accelerate.checkpointing][INFO] - Scheduler state saved in experiments/noise_distillation/checkpoints/epoch_21/scheduler.bin
+[2025-12-12 22:47:44,888][accelerate.checkpointing][INFO] - Sampler state for dataloader 0 saved in experiments/noise_distillation/checkpoints/epoch_21/sampler.bin
+[2025-12-12 22:47:44,888][accelerate.checkpointing][INFO] - Sampler state for dataloader 1 saved in experiments/noise_distillation/checkpoints/epoch_21/sampler_1.bin
+[2025-12-12 22:47:44,890][accelerate.checkpointing][INFO] - Gradient scaler state saved in experiments/noise_distillation/checkpoints/epoch_21/scaler.pt
+[2025-12-12 22:47:44,893][accelerate.checkpointing][INFO] - Random states saved in experiments/noise_distillation/checkpoints/epoch_21/random_states_0.pkl
+[2025-12-12 22:47:44,893][accelerate.checkpointing][INFO] - Saving the state of NoiseTrainer to experiments/noise_distillation/checkpoints/epoch_21/custom_checkpoint_0.pkl
+[2025-12-12 22:47:44,907][accelerate.accelerator][INFO] - Saving current state to experiments/noise_distillation/checkpoints/best
+[2025-12-12 22:47:45,454][accelerate.checkpointing][INFO] - Model weights saved in experiments/noise_distillation/checkpoints/best/model.safetensors
+[2025-12-12 22:47:45,500][accelerate.checkpointing][INFO] - Optimizer state saved in experiments/noise_distillation/checkpoints/best/optimizer.bin
+[2025-12-12 22:47:45,502][accelerate.checkpointing][INFO] - Scheduler state saved in experiments/noise_distillation/checkpoints/best/scheduler.bin
+[2025-12-12 22:47:45,503][accelerate.checkpointing][INFO] - Sampler state for dataloader 0 saved in experiments/noise_distillation/checkpoints/best/sampler.bin
+[2025-12-12 22:47:45,503][accelerate.checkpointing][INFO] - Sampler state for dataloader 1 saved in experiments/noise_distillation/checkpoints/best/sampler_1.bin
+[2025-12-12 22:47:45,504][accelerate.checkpointing][INFO] - Gradient scaler state saved in experiments/noise_distillation/checkpoints/best/scaler.pt
+[2025-12-12 22:47:45,506][accelerate.checkpointing][INFO] - Random states saved in experiments/noise_distillation/checkpoints/best/random_states_0.pkl
+[2025-12-12 22:47:45,507][accelerate.checkpointing][INFO] - Saving the state of NoiseTrainer to experiments/noise_distillation/checkpoints/best/custom_checkpoint_0.pkl
+[2025-12-12 22:47:45,509][accel_hydra.utils.logging.experiments/noise_distillation//train.log][INFO] - training epoch 21 ended
+[2025-12-13 00:45:24,182][accelerate.accelerator][INFO] - Saving current state to experiments/noise_distillation/checkpoints/epoch_22
+[2025-12-13 00:45:24,736][accelerate.checkpointing][INFO] - Model weights saved in experiments/noise_distillation/checkpoints/epoch_22/model.safetensors
+[2025-12-13 00:45:24,781][accelerate.checkpointing][INFO] - Optimizer state saved in experiments/noise_distillation/checkpoints/epoch_22/optimizer.bin
+[2025-12-13 00:45:24,784][accelerate.checkpointing][INFO] - Scheduler state saved in experiments/noise_distillation/checkpoints/epoch_22/scheduler.bin
+[2025-12-13 00:45:24,785][accelerate.checkpointing][INFO] - Sampler state for dataloader 0 saved in experiments/noise_distillation/checkpoints/epoch_22/sampler.bin
+[2025-12-13 00:45:24,785][accelerate.checkpointing][INFO] - Sampler state for dataloader 1 saved in experiments/noise_distillation/checkpoints/epoch_22/sampler_1.bin
+[2025-12-13 00:45:24,787][accelerate.checkpointing][INFO] - Gradient scaler state saved in experiments/noise_distillation/checkpoints/epoch_22/scaler.pt
+[2025-12-13 00:45:24,790][accelerate.checkpointing][INFO] - Random states saved in experiments/noise_distillation/checkpoints/epoch_22/random_states_0.pkl
+[2025-12-13 00:45:24,791][accelerate.checkpointing][INFO] - Saving the state of NoiseTrainer to experiments/noise_distillation/checkpoints/epoch_22/custom_checkpoint_0.pkl
+[2025-12-13 00:45:24,803][accelerate.accelerator][INFO] - Saving current state to experiments/noise_distillation/checkpoints/best
+[2025-12-13 00:45:25,352][accelerate.checkpointing][INFO] - Model weights saved in experiments/noise_distillation/checkpoints/best/model.safetensors
+[2025-12-13 00:45:25,394][accelerate.checkpointing][INFO] - Optimizer state saved in experiments/noise_distillation/checkpoints/best/optimizer.bin
+[2025-12-13 00:45:25,396][accelerate.checkpointing][INFO] - Scheduler state saved in experiments/noise_distillation/checkpoints/best/scheduler.bin
+[2025-12-13 00:45:25,397][accelerate.checkpointing][INFO] - Sampler state for dataloader 0 saved in experiments/noise_distillation/checkpoints/best/sampler.bin
+[2025-12-13 00:45:25,397][accelerate.checkpointing][INFO] - Sampler state for dataloader 1 saved in experiments/noise_distillation/checkpoints/best/sampler_1.bin
+[2025-12-13 00:45:25,398][accelerate.checkpointing][INFO] - Gradient scaler state saved in experiments/noise_distillation/checkpoints/best/scaler.pt
+[2025-12-13 00:45:25,399][accelerate.checkpointing][INFO] - Random states saved in experiments/noise_distillation/checkpoints/best/random_states_0.pkl
+[2025-12-13 00:45:25,400][accelerate.checkpointing][INFO] - Saving the state of NoiseTrainer to experiments/noise_distillation/checkpoints/best/custom_checkpoint_0.pkl
+[2025-12-13 00:45:25,401][accel_hydra.utils.logging.experiments/noise_distillation//train.log][INFO] - training epoch 22 ended
+[2025-12-13 02:43:15,443][accelerate.accelerator][INFO] - Saving current state to experiments/noise_distillation/checkpoints/epoch_23
+[2025-12-13 02:43:16,005][accelerate.checkpointing][INFO] - Model weights saved in experiments/noise_distillation/checkpoints/epoch_23/model.safetensors
+[2025-12-13 02:43:16,058][accelerate.checkpointing][INFO] - Optimizer state saved in experiments/noise_distillation/checkpoints/epoch_23/optimizer.bin
+[2025-12-13 02:43:16,060][accelerate.checkpointing][INFO] - Scheduler state saved in experiments/noise_distillation/checkpoints/epoch_23/scheduler.bin
+[2025-12-13 02:43:16,061][accelerate.checkpointing][INFO] - Sampler state for dataloader 0 saved in experiments/noise_distillation/checkpoints/epoch_23/sampler.bin
+[2025-12-13 02:43:16,061][accelerate.checkpointing][INFO] - Sampler state for dataloader 1 saved in experiments/noise_distillation/checkpoints/epoch_23/sampler_1.bin
+[2025-12-13 02:43:16,063][accelerate.checkpointing][INFO] - Gradient scaler state saved in experiments/noise_distillation/checkpoints/epoch_23/scaler.pt
+[2025-12-13 02:43:16,066][accelerate.checkpointing][INFO] - Random states saved in experiments/noise_distillation/checkpoints/epoch_23/random_states_0.pkl
+[2025-12-13 02:43:16,066][accelerate.checkpointing][INFO] - Saving the state of NoiseTrainer to experiments/noise_distillation/checkpoints/epoch_23/custom_checkpoint_0.pkl
+[2025-12-13 02:43:16,083][accelerate.accelerator][INFO] - Saving current state to experiments/noise_distillation/checkpoints/best
+[2025-12-13 02:43:16,624][accelerate.checkpointing][INFO] - Model weights saved in experiments/noise_distillation/checkpoints/best/model.safetensors
+[2025-12-13 02:43:16,671][accelerate.checkpointing][INFO] - Optimizer state saved in experiments/noise_distillation/checkpoints/best/optimizer.bin
+[2025-12-13 02:43:16,674][accelerate.checkpointing][INFO] - Scheduler state saved in experiments/noise_distillation/checkpoints/best/scheduler.bin
+[2025-12-13 02:43:16,674][accelerate.checkpointing][INFO] - Sampler state for dataloader 0 saved in experiments/noise_distillation/checkpoints/best/sampler.bin
+[2025-12-13 02:43:16,675][accelerate.checkpointing][INFO] - Sampler state for dataloader 1 saved in experiments/noise_distillation/checkpoints/best/sampler_1.bin
+[2025-12-13 02:43:16,676][accelerate.checkpointing][INFO] - Gradient scaler state saved in experiments/noise_distillation/checkpoints/best/scaler.pt
+[2025-12-13 02:43:16,679][accelerate.checkpointing][INFO] - Random states saved in experiments/noise_distillation/checkpoints/best/random_states_0.pkl
+[2025-12-13 02:43:16,679][accelerate.checkpointing][INFO] - Saving the state of NoiseTrainer to experiments/noise_distillation/checkpoints/best/custom_checkpoint_0.pkl
+[2025-12-13 02:43:16,681][accel_hydra.utils.logging.experiments/noise_distillation//train.log][INFO] - training epoch 23 ended
+[2025-12-13 04:41:02,867][accelerate.accelerator][INFO] - Saving current state to experiments/noise_distillation/checkpoints/epoch_24
+[2025-12-13 04:41:03,435][accelerate.checkpointing][INFO] - Model weights saved in experiments/noise_distillation/checkpoints/epoch_24/model.safetensors
+[2025-12-13 04:41:03,487][accelerate.checkpointing][INFO] - Optimizer state saved in experiments/noise_distillation/checkpoints/epoch_24/optimizer.bin
+[2025-12-13 04:41:03,490][accelerate.checkpointing][INFO] - Scheduler state saved in experiments/noise_distillation/checkpoints/epoch_24/scheduler.bin
+[2025-12-13 04:41:03,490][accelerate.checkpointing][INFO] - Sampler state for dataloader 0 saved in experiments/noise_distillation/checkpoints/epoch_24/sampler.bin
+[2025-12-13 04:41:03,490][accelerate.checkpointing][INFO] - Sampler state for dataloader 1 saved in experiments/noise_distillation/checkpoints/epoch_24/sampler_1.bin
+[2025-12-13 04:41:03,492][accelerate.checkpointing][INFO] - Gradient scaler state saved in experiments/noise_distillation/checkpoints/epoch_24/scaler.pt
+[2025-12-13 04:41:03,495][accelerate.checkpointing][INFO] - Random states saved in experiments/noise_distillation/checkpoints/epoch_24/random_states_0.pkl
+[2025-12-13 04:41:03,495][accelerate.checkpointing][INFO] - Saving the state of NoiseTrainer to experiments/noise_distillation/checkpoints/epoch_24/custom_checkpoint_0.pkl
+[2025-12-13 04:41:03,510][accelerate.accelerator][INFO] - Saving current state to experiments/noise_distillation/checkpoints/best
+[2025-12-13 04:41:04,090][accelerate.checkpointing][INFO] - Model weights saved in experiments/noise_distillation/checkpoints/best/model.safetensors
+[2025-12-13 04:41:04,136][accelerate.checkpointing][INFO] - Optimizer state saved in experiments/noise_distillation/checkpoints/best/optimizer.bin
+[2025-12-13 04:41:04,138][accelerate.checkpointing][INFO] - Scheduler state saved in experiments/noise_distillation/checkpoints/best/scheduler.bin
+[2025-12-13 04:41:04,138][accelerate.checkpointing][INFO] - Sampler state for dataloader 0 saved in experiments/noise_distillation/checkpoints/best/sampler.bin
+[2025-12-13 04:41:04,139][accelerate.checkpointing][INFO] - Sampler state for dataloader 1 saved in experiments/noise_distillation/checkpoints/best/sampler_1.bin
+[2025-12-13 04:41:04,141][accelerate.checkpointing][INFO] - Gradient scaler state saved in experiments/noise_distillation/checkpoints/best/scaler.pt
+[2025-12-13 04:41:04,144][accelerate.checkpointing][INFO] - Random states saved in experiments/noise_distillation/checkpoints/best/random_states_0.pkl
+[2025-12-13 04:41:04,144][accelerate.checkpointing][INFO] - Saving the state of NoiseTrainer to experiments/noise_distillation/checkpoints/best/custom_checkpoint_0.pkl
+[2025-12-13 04:41:04,146][accel_hydra.utils.logging.experiments/noise_distillation//train.log][INFO] - training epoch 24 ended
+[2025-12-13 06:39:00,457][accelerate.accelerator][INFO] - Saving current state to experiments/noise_distillation/checkpoints/epoch_25
+[2025-12-13 06:39:01,023][accelerate.checkpointing][INFO] - Model weights saved in experiments/noise_distillation/checkpoints/epoch_25/model.safetensors
+[2025-12-13 06:39:01,081][accelerate.checkpointing][INFO] - Optimizer state saved in experiments/noise_distillation/checkpoints/epoch_25/optimizer.bin
+[2025-12-13 06:39:01,083][accelerate.checkpointing][INFO] - Scheduler state saved in experiments/noise_distillation/checkpoints/epoch_25/scheduler.bin
+[2025-12-13 06:39:01,084][accelerate.checkpointing][INFO] - Sampler state for dataloader 0 saved in experiments/noise_distillation/checkpoints/epoch_25/sampler.bin
+[2025-12-13 06:39:01,084][accelerate.checkpointing][INFO] - Sampler state for dataloader 1 saved in experiments/noise_distillation/checkpoints/epoch_25/sampler_1.bin
+[2025-12-13 06:39:01,086][accelerate.checkpointing][INFO] - Gradient scaler state saved in experiments/noise_distillation/checkpoints/epoch_25/scaler.pt
+[2025-12-13 06:39:01,088][accelerate.checkpointing][INFO] - Random states saved in experiments/noise_distillation/checkpoints/epoch_25/random_states_0.pkl
+[2025-12-13 06:39:01,089][accelerate.checkpointing][INFO] - Saving the state of NoiseTrainer to experiments/noise_distillation/checkpoints/epoch_25/custom_checkpoint_0.pkl
+[2025-12-13 06:39:01,103][accelerate.accelerator][INFO] - Saving current state to experiments/noise_distillation/checkpoints/best
+[2025-12-13 06:39:01,660][accelerate.checkpointing][INFO] - Model weights saved in experiments/noise_distillation/checkpoints/best/model.safetensors
+[2025-12-13 06:39:01,706][accelerate.checkpointing][INFO] - Optimizer state saved in experiments/noise_distillation/checkpoints/best/optimizer.bin
+[2025-12-13 06:39:01,708][accelerate.checkpointing][INFO] - Scheduler state saved in experiments/noise_distillation/checkpoints/best/scheduler.bin
+[2025-12-13 06:39:01,708][accelerate.checkpointing][INFO] - Sampler state for dataloader 0 saved in experiments/noise_distillation/checkpoints/best/sampler.bin
+[2025-12-13 06:39:01,708][accelerate.checkpointing][INFO] - Sampler state for dataloader 1 saved in experiments/noise_distillation/checkpoints/best/sampler_1.bin
+[2025-12-13 06:39:01,711][accelerate.checkpointing][INFO] - Gradient scaler state saved in experiments/noise_distillation/checkpoints/best/scaler.pt
+[2025-12-13 06:39:01,712][accelerate.checkpointing][INFO] - Random states saved in experiments/noise_distillation/checkpoints/best/random_states_0.pkl
+[2025-12-13 06:39:01,713][accelerate.checkpointing][INFO] - Saving the state of NoiseTrainer to experiments/noise_distillation/checkpoints/best/custom_checkpoint_0.pkl
+[2025-12-13 06:39:01,714][accel_hydra.utils.logging.experiments/noise_distillation//train.log][INFO] - training epoch 25 ended
+[2025-12-13 08:36:41,841][accelerate.accelerator][INFO] - Saving current state to experiments/noise_distillation/checkpoints/epoch_26
+[2025-12-13 08:36:42,384][accelerate.checkpointing][INFO] - Model weights saved in experiments/noise_distillation/checkpoints/epoch_26/model.safetensors
+[2025-12-13 08:36:42,434][accelerate.checkpointing][INFO] - Optimizer state saved in experiments/noise_distillation/checkpoints/epoch_26/optimizer.bin
+[2025-12-13 08:36:42,436][accelerate.checkpointing][INFO] - Scheduler state saved in experiments/noise_distillation/checkpoints/epoch_26/scheduler.bin
+[2025-12-13 08:36:42,437][accelerate.checkpointing][INFO] - Sampler state for dataloader 0 saved in experiments/noise_distillation/checkpoints/epoch_26/sampler.bin
+[2025-12-13 08:36:42,437][accelerate.checkpointing][INFO] - Sampler state for dataloader 1 saved in experiments/noise_distillation/checkpoints/epoch_26/sampler_1.bin
+[2025-12-13 08:36:42,439][accelerate.checkpointing][INFO] - Gradient scaler state saved in experiments/noise_distillation/checkpoints/epoch_26/scaler.pt
+[2025-12-13 08:36:42,441][accelerate.checkpointing][INFO] - Random states saved in experiments/noise_distillation/checkpoints/epoch_26/random_states_0.pkl
+[2025-12-13 08:36:42,442][accelerate.checkpointing][INFO] - Saving the state of NoiseTrainer to experiments/noise_distillation/checkpoints/epoch_26/custom_checkpoint_0.pkl
+[2025-12-13 08:36:42,458][accelerate.accelerator][INFO] - Saving current state to experiments/noise_distillation/checkpoints/best
+[2025-12-13 08:36:43,025][accelerate.checkpointing][INFO] - Model weights saved in experiments/noise_distillation/checkpoints/best/model.safetensors
+[2025-12-13 08:36:43,074][accelerate.checkpointing][INFO] - Optimizer state saved in experiments/noise_distillation/checkpoints/best/optimizer.bin
+[2025-12-13 08:36:43,076][accelerate.checkpointing][INFO] - Scheduler state saved in experiments/noise_distillation/checkpoints/best/scheduler.bin
+[2025-12-13 08:36:43,077][accelerate.checkpointing][INFO] - Sampler state for dataloader 0 saved in experiments/noise_distillation/checkpoints/best/sampler.bin
+[2025-12-13 08:36:43,077][accelerate.checkpointing][INFO] - Sampler state for dataloader 1 saved in experiments/noise_distillation/checkpoints/best/sampler_1.bin
+[2025-12-13 08:36:43,079][accelerate.checkpointing][INFO] - Gradient scaler state saved in experiments/noise_distillation/checkpoints/best/scaler.pt
+[2025-12-13 08:36:43,081][accelerate.checkpointing][INFO] - Random states saved in experiments/noise_distillation/checkpoints/best/random_states_0.pkl
+[2025-12-13 08:36:43,081][accelerate.checkpointing][INFO] - Saving the state of NoiseTrainer to experiments/noise_distillation/checkpoints/best/custom_checkpoint_0.pkl
+[2025-12-13 08:36:43,083][accel_hydra.utils.logging.experiments/noise_distillation//train.log][INFO] - training epoch 26 ended
+[2025-12-13 10:34:22,690][accelerate.accelerator][INFO] - Saving current state to experiments/noise_distillation/checkpoints/epoch_27
+[2025-12-13 10:34:23,266][accelerate.checkpointing][INFO] - Model weights saved in experiments/noise_distillation/checkpoints/epoch_27/model.safetensors
+[2025-12-13 10:34:23,330][accelerate.checkpointing][INFO] - Optimizer state saved in experiments/noise_distillation/checkpoints/epoch_27/optimizer.bin
+[2025-12-13 10:34:23,333][accelerate.checkpointing][INFO] - Scheduler state saved in experiments/noise_distillation/checkpoints/epoch_27/scheduler.bin
+[2025-12-13 10:34:23,333][accelerate.checkpointing][INFO] - Sampler state for dataloader 0 saved in experiments/noise_distillation/checkpoints/epoch_27/sampler.bin
+[2025-12-13 10:34:23,333][accelerate.checkpointing][INFO] - Sampler state for dataloader 1 saved in experiments/noise_distillation/checkpoints/epoch_27/sampler_1.bin
+[2025-12-13 10:34:23,336][accelerate.checkpointing][INFO] - Gradient scaler state saved in experiments/noise_distillation/checkpoints/epoch_27/scaler.pt
+[2025-12-13 10:34:23,338][accelerate.checkpointing][INFO] - Random states saved in experiments/noise_distillation/checkpoints/epoch_27/random_states_0.pkl
+[2025-12-13 10:34:23,339][accelerate.checkpointing][INFO] - Saving the state of NoiseTrainer to experiments/noise_distillation/checkpoints/epoch_27/custom_checkpoint_0.pkl
+[2025-12-13 10:34:23,354][accelerate.accelerator][INFO] - Saving current state to experiments/noise_distillation/checkpoints/best
+[2025-12-13 10:34:23,917][accelerate.checkpointing][INFO] - Model weights saved in experiments/noise_distillation/checkpoints/best/model.safetensors
+[2025-12-13 10:34:23,971][accelerate.checkpointing][INFO] - Optimizer state saved in experiments/noise_distillation/checkpoints/best/optimizer.bin
+[2025-12-13 10:34:23,973][accelerate.checkpointing][INFO] - Scheduler state saved in experiments/noise_distillation/checkpoints/best/scheduler.bin
+[2025-12-13 10:34:23,973][accelerate.checkpointing][INFO] - Sampler state for dataloader 0 saved in experiments/noise_distillation/checkpoints/best/sampler.bin
+[2025-12-13 10:34:23,973][accelerate.checkpointing][INFO] - Sampler state for dataloader 1 saved in experiments/noise_distillation/checkpoints/best/sampler_1.bin
+[2025-12-13 10:34:23,974][accelerate.checkpointing][INFO] - Gradient scaler state saved in experiments/noise_distillation/checkpoints/best/scaler.pt
+[2025-12-13 10:34:23,976][accelerate.checkpointing][INFO] - Random states saved in experiments/noise_distillation/checkpoints/best/random_states_0.pkl
+[2025-12-13 10:34:23,976][accelerate.checkpointing][INFO] - Saving the state of NoiseTrainer to experiments/noise_distillation/checkpoints/best/custom_checkpoint_0.pkl
+[2025-12-13 10:34:23,978][accel_hydra.utils.logging.experiments/noise_distillation//train.log][INFO] - training epoch 27 ended
+[2025-12-13 12:32:07,487][accelerate.accelerator][INFO] - Saving current state to experiments/noise_distillation/checkpoints/epoch_28
+[2025-12-13 12:32:08,020][accelerate.checkpointing][INFO] - Model weights saved in experiments/noise_distillation/checkpoints/epoch_28/model.safetensors
+[2025-12-13 12:32:08,065][accelerate.checkpointing][INFO] - Optimizer state saved in experiments/noise_distillation/checkpoints/epoch_28/optimizer.bin
+[2025-12-13 12:32:08,068][accelerate.checkpointing][INFO] - Scheduler state saved in experiments/noise_distillation/checkpoints/epoch_28/scheduler.bin
+[2025-12-13 12:32:08,069][accelerate.checkpointing][INFO] - Sampler state for dataloader 0 saved in experiments/noise_distillation/checkpoints/epoch_28/sampler.bin
+[2025-12-13 12:32:08,069][accelerate.checkpointing][INFO] - Sampler state for dataloader 1 saved in experiments/noise_distillation/checkpoints/epoch_28/sampler_1.bin
+[2025-12-13 12:32:08,071][accelerate.checkpointing][INFO] - Gradient scaler state saved in experiments/noise_distillation/checkpoints/epoch_28/scaler.pt
+[2025-12-13 12:32:08,073][accelerate.checkpointing][INFO] - Random states saved in experiments/noise_distillation/checkpoints/epoch_28/random_states_0.pkl
+[2025-12-13 12:32:08,074][accelerate.checkpointing][INFO] - Saving the state of NoiseTrainer to experiments/noise_distillation/checkpoints/epoch_28/custom_checkpoint_0.pkl
+[2025-12-13 12:32:08,088][accelerate.accelerator][INFO] - Saving current state to experiments/noise_distillation/checkpoints/best
+[2025-12-13 12:32:08,624][accelerate.checkpointing][INFO] - Model weights saved in experiments/noise_distillation/checkpoints/best/model.safetensors
+[2025-12-13 12:32:08,667][accelerate.checkpointing][INFO] - Optimizer state saved in experiments/noise_distillation/checkpoints/best/optimizer.bin
+[2025-12-13 12:32:08,668][accelerate.checkpointing][INFO] - Scheduler state saved in experiments/noise_distillation/checkpoints/best/scheduler.bin
+[2025-12-13 12:32:08,669][accelerate.checkpointing][INFO] - Sampler state for dataloader 0 saved in experiments/noise_distillation/checkpoints/best/sampler.bin
+[2025-12-13 12:32:08,669][accelerate.checkpointing][INFO] - Sampler state for dataloader 1 saved in experiments/noise_distillation/checkpoints/best/sampler_1.bin
+[2025-12-13 12:32:08,670][accelerate.checkpointing][INFO] - Gradient scaler state saved in experiments/noise_distillation/checkpoints/best/scaler.pt
+[2025-12-13 12:32:08,671][accelerate.checkpointing][INFO] - Random states saved in experiments/noise_distillation/checkpoints/best/random_states_0.pkl
+[2025-12-13 12:32:08,672][accelerate.checkpointing][INFO] - Saving the state of NoiseTrainer to experiments/noise_distillation/checkpoints/best/custom_checkpoint_0.pkl
+[2025-12-13 12:32:08,673][accel_hydra.utils.logging.experiments/noise_distillation//train.log][INFO] - training epoch 28 ended
+[2025-12-13 14:27:23,406][accelerate.accelerator][INFO] - Saving current state to experiments/noise_distillation/checkpoints/epoch_29
+[2025-12-13 14:27:23,915][accelerate.checkpointing][INFO] - Model weights saved in experiments/noise_distillation/checkpoints/epoch_29/model.safetensors
+[2025-12-13 14:27:23,959][accelerate.checkpointing][INFO] - Optimizer state saved in experiments/noise_distillation/checkpoints/epoch_29/optimizer.bin
+[2025-12-13 14:27:23,962][accelerate.checkpointing][INFO] - Scheduler state saved in experiments/noise_distillation/checkpoints/epoch_29/scheduler.bin
+[2025-12-13 14:27:23,962][accelerate.checkpointing][INFO] - Sampler state for dataloader 0 saved in experiments/noise_distillation/checkpoints/epoch_29/sampler.bin
+[2025-12-13 14:27:23,965][accelerate.checkpointing][INFO] - Sampler state for dataloader 1 saved in experiments/noise_distillation/checkpoints/epoch_29/sampler_1.bin
+[2025-12-13 14:27:23,967][accelerate.checkpointing][INFO] - Gradient scaler state saved in experiments/noise_distillation/checkpoints/epoch_29/scaler.pt
+[2025-12-13 14:27:23,969][accelerate.checkpointing][INFO] - Random states saved in experiments/noise_distillation/checkpoints/epoch_29/random_states_0.pkl
+[2025-12-13 14:27:23,970][accelerate.checkpointing][INFO] - Saving the state of NoiseTrainer to experiments/noise_distillation/checkpoints/epoch_29/custom_checkpoint_0.pkl
+[2025-12-13 14:27:23,984][accelerate.accelerator][INFO] - Saving current state to experiments/noise_distillation/checkpoints/best
+[2025-12-13 14:27:24,541][accelerate.checkpointing][INFO] - Model weights saved in experiments/noise_distillation/checkpoints/best/model.safetensors
+[2025-12-13 14:27:24,583][accelerate.checkpointing][INFO] - Optimizer state saved in experiments/noise_distillation/checkpoints/best/optimizer.bin
+[2025-12-13 14:27:24,584][accelerate.checkpointing][INFO] - Scheduler state saved in experiments/noise_distillation/checkpoints/best/scheduler.bin
+[2025-12-13 14:27:24,584][accelerate.checkpointing][INFO] - Sampler state for dataloader 0 saved in experiments/noise_distillation/checkpoints/best/sampler.bin
+[2025-12-13 14:27:24,585][accelerate.checkpointing][INFO] - Sampler state for dataloader 1 saved in experiments/noise_distillation/checkpoints/best/sampler_1.bin
+[2025-12-13 14:27:24,586][accelerate.checkpointing][INFO] - Gradient scaler state saved in experiments/noise_distillation/checkpoints/best/scaler.pt
+[2025-12-13 14:27:24,587][accelerate.checkpointing][INFO] - Random states saved in experiments/noise_distillation/checkpoints/best/random_states_0.pkl
+[2025-12-13 14:27:24,587][accelerate.checkpointing][INFO] - Saving the state of NoiseTrainer to experiments/noise_distillation/checkpoints/best/custom_checkpoint_0.pkl
+[2025-12-13 14:27:24,589][accel_hydra.utils.logging.experiments/noise_distillation//train.log][INFO] - training epoch 29 ended
+[2025-12-13 16:22:36,739][accelerate.accelerator][INFO] - Saving current state to experiments/noise_distillation/checkpoints/epoch_30
+[2025-12-13 16:22:37,267][accelerate.checkpointing][INFO] - Model weights saved in experiments/noise_distillation/checkpoints/epoch_30/model.safetensors
+[2025-12-13 16:22:37,317][accelerate.checkpointing][INFO] - Optimizer state saved in experiments/noise_distillation/checkpoints/epoch_30/optimizer.bin
+[2025-12-13 16:22:37,319][accelerate.checkpointing][INFO] - Scheduler state saved in experiments/noise_distillation/checkpoints/epoch_30/scheduler.bin
+[2025-12-13 16:22:37,320][accelerate.checkpointing][INFO] - Sampler state for dataloader 0 saved in experiments/noise_distillation/checkpoints/epoch_30/sampler.bin
+[2025-12-13 16:22:37,320][accelerate.checkpointing][INFO] - Sampler state for dataloader 1 saved in experiments/noise_distillation/checkpoints/epoch_30/sampler_1.bin
+[2025-12-13 16:22:37,322][accelerate.checkpointing][INFO] - Gradient scaler state saved in experiments/noise_distillation/checkpoints/epoch_30/scaler.pt
+[2025-12-13 16:22:37,324][accelerate.checkpointing][INFO] - Random states saved in experiments/noise_distillation/checkpoints/epoch_30/random_states_0.pkl
+[2025-12-13 16:22:37,324][accelerate.checkpointing][INFO] - Saving the state of NoiseTrainer to experiments/noise_distillation/checkpoints/epoch_30/custom_checkpoint_0.pkl
+[2025-12-13 16:22:37,339][accelerate.accelerator][INFO] - Saving current state to experiments/noise_distillation/checkpoints/best
+[2025-12-13 16:22:37,846][accelerate.checkpointing][INFO] - Model weights saved in experiments/noise_distillation/checkpoints/best/model.safetensors
+[2025-12-13 16:22:37,890][accelerate.checkpointing][INFO] - Optimizer state saved in experiments/noise_distillation/checkpoints/best/optimizer.bin
+[2025-12-13 16:22:37,891][accelerate.checkpointing][INFO] - Scheduler state saved in experiments/noise_distillation/checkpoints/best/scheduler.bin
+[2025-12-13 16:22:37,892][accelerate.checkpointing][INFO] - Sampler state for dataloader 0 saved in experiments/noise_distillation/checkpoints/best/sampler.bin
+[2025-12-13 16:22:37,892][accelerate.checkpointing][INFO] - Sampler state for dataloader 1 saved in experiments/noise_distillation/checkpoints/best/sampler_1.bin
+[2025-12-13 16:22:37,893][accelerate.checkpointing][INFO] - Gradient scaler state saved in experiments/noise_distillation/checkpoints/best/scaler.pt
+[2025-12-13 16:22:37,895][accelerate.checkpointing][INFO] - Random states saved in experiments/noise_distillation/checkpoints/best/random_states_0.pkl
+[2025-12-13 16:22:37,895][accelerate.checkpointing][INFO] - Saving the state of NoiseTrainer to experiments/noise_distillation/checkpoints/best/custom_checkpoint_0.pkl
+[2025-12-13 16:22:37,897][accel_hydra.utils.logging.experiments/noise_distillation//train.log][INFO] - training epoch 30 ended

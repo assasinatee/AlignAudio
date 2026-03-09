@@ -4,24 +4,20 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>AlignAudio — Demo</title>
-
-<!-- Optional: use Google font (falls back to system sans) -->
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-
 <style>
 :root{
   --page-bg: #f5f7fb;
   --card-bg: #fff;
   --muted: #6b7280;
-  --accent: #2563eb;      /* blue */
-  --accent-2: #f59e0b;    /* warm accent for noisy */
+  --accent: #2563eb; /* blue */
+  --accent-2: #f59e0b; /* warm accent for noisy */
   --radius: 12px;
   --gap: 18px;
-  --max-width: 1120px;
+  --max-width: 1350px;
   --card-padding: 18px;
   --model-col-w: 220px;
 }
-
 /* Reset / layout */
 *{box-sizing:border-box}
 body{
@@ -44,7 +40,7 @@ body{
   padding:12px;
   box-shadow:0 6px 22px rgba(12, 18, 25, 0.06);
   margin-bottom:26px;
-  overflow:hidden;
+  overflow: visible; /* allow decorations to overflow */
 }
 
 /* text row */
@@ -52,14 +48,14 @@ body{
   padding:var(--card-padding);
   border-bottom:1px solid #eef2f7;
 }
-.sample-id{font-weight:700;margin-bottom:6px;font-size:18px}
-.sample-text{color:var(--muted);font-size:14px}
+.sample-id{font-weight:700;margin-bottom:10px;font-size:20px}
+.sample-text{color:var(--muted);font-size:16px}
 
 /* conditions container (clean / noisy) */
 .conditions{
   display:flex;
   flex-direction:column;
-  gap:14px;
+  gap:16px;
   padding:var(--card-padding);
 }
 
@@ -87,18 +83,20 @@ body{
 
 /* first row: a small inline label and the input card + small meta */
 .cond-header{display:flex;align-items:center;gap:10px}
-.cond-label{font-weight:600;font-size:13px;color:#0f172a}
-.cond-meta{color:var(--muted);font-size:13px}
+.cond-label{font-weight:600;font-size:16px;color:#0f172a}
+.cond-meta{color:var(--muted);font-size:16px}
 
-/* grid of audio cards: first is Input (same card style) then models */
+/* grid of audio cards */
 .audio-grid{
   display:grid;
   grid-auto-flow:column;
   grid-auto-columns:var(--model-col-w);
-  gap:12px;
-  overflow:auto; /* horizontal scroll if many models */
+  gap: var(--gap);
+  overflow: visible;   /* allow ::after decoration to overflow into gap */
+  position: relative;
   padding-bottom:8px;
   padding-top:4px;
+  contain: none;
 }
 
 /* individual audio card */
@@ -113,18 +111,47 @@ body{
   gap:8px;
   align-items:stretch;
   box-shadow:0 2px 8px rgba(14,20,30,0.03);
+  height:100px;
+  min-height:100%;
+  max-height:100px;
+  overflow: visible; /* allow ::after overflow */
+  position: relative;
+  z-index:1;
+  box-sizing:border-box;
 }
-.audio-card .label{font-weight:600;font-size:13px}
-.audio-card .sub { color:var(--muted);font-size:12px}
+
+.audio-card .sub { color:var(--muted);font-size:14px}
 .audio-card audio{width:100%;outline:none;border-radius:6px}
 
 /* input card special style */
-.input-card{border:1px dashed #dbeafe;background:linear-gradient(180deg,#f8fbff, #ffffff)}
+.input-card {
+  border: 1px dashed #dbeafe;
+  background: linear-gradient(180deg, #f8fbff, #ffffff);
+  z-index:2;
+  overflow: visible;
+  position: relative;
+}
+
+/* vertical bar decoration (desktop) */
+.input-card::after {
+  content: "";
+  position: absolute;
+  top: -3px;
+  bottom: -3px;
+  right: -12px; /* overflow into gap */
+  width: 3px;
+  background: linear-gradient(to bottom, #4b5563, #6b7280, #4b5563);
+  border-radius: 3px;
+  box-shadow: 2px 0 6px rgba(0,0,0,0.12), -1px 0 4px rgba(0,0,0,0.06);
+  z-index: 20;
+  display: block;
+  pointer-events: none;
+}
 
 /* highlight ours */
 .ours{box-shadow:0 6px 20px rgba(37,99,235,0.08);border:2px solid rgba(37,99,235,0.12)}
 
-/* small row for download / notes (kept in CSS but buttons removed) */
+/* small row for download / notes */
 .row-bottom{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-top:6px}
 .btn{
   font-weight:600;
@@ -137,111 +164,185 @@ body{
 .btn-ghost{background:transparent;color:var(--accent);border:1px solid rgba(37,99,235,0.12)}
 .btn-download{background:#f3f4f6;color:#111;border:1px solid #e6e9ee}
 
-/* responsive: stack */
+/* responsive: stack + mobile bar */
 @media (max-width:980px){
   .audio-grid{grid-auto-flow:row;grid-auto-columns:1fr;overflow:visible}
   .condition-block{flex-direction:column}
-  .condition-flag{display:none}
+  
+  /* input-card horizontal bar on mobile */
+  .input-card::after {
+    top: auto;
+    bottom: -10px;
+    left: 12px;
+    right: 12px;
+    height: 3px;
+    width: auto;
+    background: #6b7280;
+    border-radius: 2px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+    display: block;
+  }
 }
+
+/* Paper intro box */
+.paper-intro{
+  background:var(--card-bg);
+  border-radius:var(--radius);
+  padding:24px;
+  box-shadow:0 6px 22px rgba(12, 18, 25, 0.06);
+  margin-bottom:32px;
+  text-align:center;
+}
+.paper-title{
+  font-size:36px;
+  font-weight:700;
+  margin-bottom:16px;
+}
+.paper-subtitle{
+  font-size:26px;
+  font-weight:500;
+  margin-bottom:20px;
+  max-width:1500px;
+  margin-left:auto;
+  margin-right:auto;
+}
+.paper-abstract{
+  color:#0f172a;
+  font-size:17px;
+  line-height:1.55;
+  text-align:left;
+}
+strong { font-weight: 700; }
 </style>
 </head>
 <body>
 <div class="wrap">
-
-  <div class="header">
-    <div>
-      <div class="title">AlignAudio — Demo</div>
-      <div class="subtitle">Each case: Text → Clean / Noisy (input speech) → multiple model outputs (aligned horizontally)</div>
+  <div class="paper-intro">
+    <div class="paper-title">AlignAudio</div>
+    <div class="paper-subtitle">AlignAudio: Dual-Alignment for Noise-Robust Speech-to-Audio Generation</div>
+    <div class="paper-abstract">
+      <strong>Abstract</strong> Speech-to-audio (STA) generation directly maps speech to environmental audio, offering a low-latency alternative to cascaded ASR-TTA systems. Recent end-to-end STA frameworks have demonstrated generation fidelity under clean conditions, but they do not address distribution mismatch from environmental noise, which may degrade fidelity and omit acoustic events. To bridge this gap, we propose AlignAudio, a dual-alignment framework for noise-robust end-to-end STA. It (i) aligns representations of clean and noisy speech to preserve semantic cues, and (ii) enforces generation-level consistency in the flow-matching process to maintain temporal coherence. Experiments demonstrate that AlignAudio maintains performance comparable to baselines on clean speech, while outperforming them on all noisy conditions, achieving better temporal coherence and fewer distorted acoustic events.
     </div>
   </div>
-
   <div id="samples-root"></div>
-
 </div>
 
 <script>
-/* ---------- Data: edit this array to add cases ---------- 
-   Naming rules (recommended):
-   samples/<caseId>/clean_speech.mp3
-   samples/<caseId>/noisy_speech.mp3
-   samples/<caseId>/clean_<modelid>.mp3
-   samples/<caseId>/noisy_<modelid>.mp3
-*/
 const cases = [
-  {
-    id: 'case1',
-    text: 'Water trickling while a man is speaking.',
-    models: [
-      { id:'model-A', title:'Model A' },
-      { id:'model-B', title:'Model B' },
-      { id:'ours',    title:'Ours' }
-    ]
-  },
-  {
-    id: 'case2',
-    text: 'Children laughing and distant traffic.',
-    models: [
-      { id:'baseline-STAR', title:'STAR' },
-      { id:'ours', title:'Ours' }
-    ]
-  }
+  { id:'Case1', text:'A woman talking followed by a group of people laughing as plastic crinkles.', 
+    models:[{id:'1',title:'STAR'},
+            {id:'2',title:'ST5 + FM'},
+            {id:'3',title:'GT → ST5 + FM'},
+            {id:'4',title:'AlignAudio'}
+  ]},
+  { id:'Case2', text:'A speedboat is racing across water with loud wind noise.', 
+  models:[{id:'1',title:'STAR'},
+          {id:'2',title:'ST5 + FM'},
+          {id:'3',title:'GT → ST5 + FM'},
+          {id:'4',title:'AlignAudio'}
+  ]},
+  { id:'Case3', text:'A woman talking followed by a group of people laughing as plastic crinkles.', 
+  models:[{id:'1',title:'STAR'},
+          {id:'2',title:'ST5 + FM'},
+          {id:'3',title:'GT → ST5 + FM'},
+          {id:'4',title:'AlignAudio'}
+  ]},
+  { id:'Case4', text:'A woman talks and a baby whispers.', 
+  models:[{id:'1',title:'STAR'},
+          {id:'2',title:'ST5 + FM'},
+          {id:'3',title:'GT → ST5 + FM'},
+          {id:'4',title:'AlignAudio'}
+  ]},
+  { id:'Case5', text:'A man speaks and a vehicle passes.', 
+  models:[{id:'1',title:'STAR'},
+          {id:'2',title:'ST5 + FM'},
+          {id:'3',title:'GT → ST5 + FM'},
+          {id:'4',title:'AlignAudio'}
+  ]},
+  { id:'Case6', text:'Wind is blowing and heavy rain is falling and splashing.', 
+  models:[{id:'1',title:'STAR'},
+          {id:'2',title:'ST5 + FM'},
+          {id:'3',title:'GT → ST5 + FM'},
+          {id:'4',title:'AlignAudio'}
+  ]},
+  { id:'Case7', text:'Speech followed by quietness and a man speaks and laughs.', 
+  models:[{id:'1',title:'STAR'},
+          {id:'2',title:'ST5 + FM'},
+          {id:'3',title:'GT → ST5 + FM'},
+          {id:'4',title:'AlignAudio'}
+  ]},
+  { id:'Case8', text:'A male voice and a machine buzzing.', 
+  models:[{id:'1',title:'STAR'},
+          {id:'2',title:'ST5 + FM'},
+          {id:'3',title:'GT → ST5 + FM'},
+          {id:'4',title:'AlignAudio'}
+  ]},
+  { id:'Case9', text:'A long burp ends in a sigh.', 
+  models:[{id:'1',title:'STAR'},
+          {id:'2',title:'ST5 + FM'},
+          {id:'3',title:'GT → ST5 + FM'},
+          {id:'4',title:'AlignAudio'}
+  ]},
+  { id:'Case10', text:'A gun cocking then firing as metal clanks on a hard surface followed by a man talking during an electronic laser effect as gunshots and explosions go off in the distance.', 
+  models:[{id:'1',title:'STAR'},
+          {id:'2',title:'ST5 + FM'},
+          {id:'3',title:'GT → ST5 + FM'},
+          {id:'4',title:'AlignAudio'}
+  ]}
 ];
 
-/* ---------- Rendering ---------- */
 const root = document.getElementById('samples-root');
 
 cases.forEach(c => {
-  const card = el('div', { class:'sample-card' });
-  // top: id + text
-  const top = el('div', { class:'sample-top' },
-    el('div', { class:'sample-id' }, c.id),
-    el('div', { class:'sample-text' }, c.text)
+  const card = el('div',{class:'sample-card'});
+  const top = el('div',{class:'sample-top'},
+    el('div',{class:'sample-id'},c.id),
+    el('div',{class:'sample-text'},c.text)
   );
   card.appendChild(top);
 
-  // conditions container
-  const conds = el('div', { class:'conditions' });
-
-  // helper to create condition (clean / noisy)
-  ['clean','noisy'].forEach((cond, idx) => {
-    const flagColor = cond === 'clean' ? 'linear-gradient(180deg,#e6f0ff,#f8fbff)' : 'linear-gradient(180deg,#fff1e6,#fffdfa)';
-    const stripe = el('div', { class:'condition-flag', style:`background:${cond==='clean'? 'linear-gradient(180deg,#e6f0ff,#f8fbff)' : 'linear-gradient(180deg,#fff1e6,#fffdfa)'}` });
-    const condBlock = el('div', { class:'condition-block' });
-    // left stripe + content wrapper
-    const content = el('div', { class:'cond-content' });
-
-    const header = el('div', { class:'cond-header' },
-      el('div', { class:'cond-label' }, cond === 'clean' ? 'Clean Condition' : 'Noisy Condition'),
-      el('div', { class:'cond-meta' }, cond === 'clean' ? 'paired clean speech (target)' : 'noisy speech (input)' )
+  const conds = el('div',{class:'conditions'});
+  ['clean','noisy'].forEach(cond => {
+    const condBlock = el('div',{class:'condition-block'});
+    const stripe = el('div',{class:'condition-flag', style:`background:${cond==='clean'? 'linear-gradient(180deg,#e6f0ff,#f8fbff)':'linear-gradient(180deg,#fff1e6,#fffdfa)'}` });
+    const content = el('div',{class:'cond-content'});
+    const header = el('div',{class:'cond-header'},
+      el('div',{class:'cond-label'}, cond==='clean'?'Clean Condition':'Noisy Condition'),
     );
 
-    // audio-grid: first input card then one card per model
-    const grid = el('div', { class:'audio-grid' });
-
-    // input card
-    const inputSrc = `samples/${c.id}/${cond}_speech.mp3`;
-    const inputCard = el('div', { class:'audio-card input-card' },
-      el('div', { class:'label' }, 'Input Speech'),
-      el('audio', { controls:true, src:inputSrc })
+    const grid = el('div',{class:'audio-grid'});
+    const inputSrc = `samples/${c.id}/${cond}_speech.wav`;
+    const inputCard = el('div',{class:'audio-card input-card'},
+      el('div',{class:'label'},'Input Speech'),
+      el('audio',{controls:true,src:inputSrc})
     );
     grid.appendChild(inputCard);
 
-    // model columns
-    c.models.forEach(m=>{
-      const modelSrc = `samples/${c.id}/${cond}_${m.id}.mp3`;
-      const classes = ['audio-card']; if(m.id === 'ours') classes.push('ours');
-      // note: removed the small "Generated environmental audio" subtext per request
-      const modelCard = el('div', { class:classes.join(' ') },
-        el('div', { class:'label' }, m.title),
-        el('audio', { controls:true, src:modelSrc })
-      );
+    c.models.forEach(m => {
+      const classes = ['audio-card'];
+      if (m.id === '4') classes.push('ours');
+
+      let cardContent = [];
+      if (cond === 'clean' && m.id === '3') { 
+        cardContent = [
+          el('div', { class: 'label' }, m.title),
+          el('div', {
+            style: 'color:#64748b; font-size:13px; text-align:center; padding:10px 0; font-weight:500;'
+          }, 'Clean speech is not processed by the SE module.')
+        ];
+      } else {
+        const modelSrc = `samples/${c.id}/${cond}_${m.id}.wav`;
+        cardContent = [
+          el('div', { class: 'label' }, m.title),
+          el('audio', { controls: true, src: modelSrc })
+        ];
+      }
+      const modelCard = el('div', { class: classes.join(' ') }, ...cardContent);
       grid.appendChild(modelCard);
     });
 
     content.appendChild(header);
     content.appendChild(grid);
-
-    // combine stripe + content
     condBlock.appendChild(stripe);
     condBlock.appendChild(content);
     conds.appendChild(condBlock);
@@ -251,20 +352,19 @@ cases.forEach(c => {
   root.appendChild(card);
 });
 
-/* small helper to build elements */
-function el(tag, attrs = {}, ...children){
+function el(tag, attrs={}, ...children){
   const e = document.createElement(tag);
   for(const k in attrs){
-    if(k === 'class') e.className = attrs[k];
-    else if(k === 'style') e.style.cssText = attrs[k];
-    else if(k === 'href') e.href = attrs[k];
-    else if(k === 'download') e.setAttribute('download', attrs[k]);
-    else if(k === 'controls' && attrs[k]) e.controls = true;
-    else if(k === 'src') e.src = attrs[k];
-    else e.setAttribute(k, attrs[k]);
+    if(k==='class') e.className=attrs[k];
+    else if(k==='style') e.style.cssText=attrs[k];
+    else if(k==='href') e.href=attrs[k];
+    else if(k==='download') e.setAttribute('download',attrs[k]);
+    else if(k==='controls' && attrs[k]) e.controls=true;
+    else if(k==='src') e.src=attrs[k];
+    else e.setAttribute(k,attrs[k]);
   }
-  children.flat().forEach(ch => {
-    if(typeof ch === 'string') e.appendChild(document.createTextNode(ch));
+  children.flat().forEach(ch=>{
+    if(typeof ch==='string') e.appendChild(document.createTextNode(ch));
     else if(ch) e.appendChild(ch);
   });
   return e;

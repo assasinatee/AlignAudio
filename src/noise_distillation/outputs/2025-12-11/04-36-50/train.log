@@ -1,0 +1,10 @@
+[2025-12-11 04:36:53,238][accelerate.utils.other][WARNING] - Detected kernel version 4.18.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+[2025-12-11 06:36:04,754][accelerate.accelerator][INFO] - Saving current state to experiments/noise_distillation/checkpoints/epoch_1
+[2025-12-11 06:36:05,355][accelerate.checkpointing][INFO] - Model weights saved in experiments/noise_distillation/checkpoints/epoch_1/model.safetensors
+[2025-12-11 06:36:05,404][accelerate.checkpointing][INFO] - Optimizer state saved in experiments/noise_distillation/checkpoints/epoch_1/optimizer.bin
+[2025-12-11 06:36:05,406][accelerate.checkpointing][INFO] - Scheduler state saved in experiments/noise_distillation/checkpoints/epoch_1/scheduler.bin
+[2025-12-11 06:36:05,406][accelerate.checkpointing][INFO] - Sampler state for dataloader 0 saved in experiments/noise_distillation/checkpoints/epoch_1/sampler.bin
+[2025-12-11 06:36:05,406][accelerate.checkpointing][INFO] - Sampler state for dataloader 1 saved in experiments/noise_distillation/checkpoints/epoch_1/sampler_1.bin
+[2025-12-11 06:36:05,408][accelerate.checkpointing][INFO] - Gradient scaler state saved in experiments/noise_distillation/checkpoints/epoch_1/scaler.pt
+[2025-12-11 06:36:05,412][accelerate.checkpointing][INFO] - Random states saved in experiments/noise_distillation/checkpoints/epoch_1/random_states_0.pkl
+[2025-12-11 06:36:05,412][accelerate.checkpointing][INFO] - Saving the state of NoiseTrainer to experiments/noise_distillation/checkpoints/epoch_1/custom_checkpoint_0.pkl
