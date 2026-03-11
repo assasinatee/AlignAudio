@@ -100,7 +100,7 @@ export default function App() {
                   {item.id}
                 </span>
               </div>
-              <p className="text-lg text-slate-700 font-medium italic">
+              <p className="text-lg text-slate-700 font-medium">
                 "{item.text}"
               </p>
             </div>
