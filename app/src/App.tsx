@@ -24,6 +24,7 @@ const NAV_LINKS = [
   // { name: 'arXiv', url: '#', icon: <ExternalLink className="w-4 h-4" /> },
 ];
 
+
 const CASES: Case[] = [
   { id: 'Case1', text: 'A woman talking followed by a group of people laughing as plastic crinkles.', 
     models: [{ id: '1', title: 'STAR' }, { id: '2', title: 'ST5 + FM' }, { id: '3', title: 'GT → ST5 + FM' }, { id: '4', title: 'AlignAudio' }] },
