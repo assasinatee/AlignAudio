@@ -1,0 +1,5 @@
+{
+  "name": "AlignAudio Demo",
+  "description": "Dual-Alignment for Noise-Robust Speech-to-Audio Generation Demo Page",
+  "requestFramePermissions": []
+}
